@@ -32,7 +32,7 @@
                     <h1 class="text-35 md:text-65 leading-none font-bold pt-4 md:pt-0 xl:w-11/12">Your go-to experts in effective & reliable pest control solutions</h1>
 
                     <div class="flex mt-10">
-                        <a href="#" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-10 md:px-16">Services</a>
+                        <a href="#services" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-10 md:px-16">Services</a>
                     </div>
                 </div>
 
@@ -104,6 +104,26 @@
                         <div class="w-full md:w-1/2 px-1">
                             <select class="form-control" name="service" required>
                                 <option selected disabled>Select service/s*</option>
+                                <option>General pest</option>
+                                <option>End of Lease</option>
+                                <option>Termite Warranty Inspections</option>
+                                <option>Bird Management</option>
+                                <option>Termite Management (pre and post-construction)</option>
+                                <option>Safe possum removal</option>
+                                <option>German Cockroaches</option>
+                                <option>Rodent treatments</option>
+                                <option>Ant treatment</option>
+                                <option>Bee treatment</option>
+                                <option>Wasp Treatment</option>
+                                <option>Bird baiting</option>
+                                <option>Mice treatment</option>
+                                <option>Bed bugs</option>
+                                <option>Fleas</option>
+                                <option>Drain flies</option>
+                                <option>Spiders</option>
+                                <option>Large Cockroaches</option>
+                                <option>Carpet Beetles</option>
+                                <option>Solar panel birdproofing</option>
                             </select>
                         </div>
                         <div class="w-full px-1">
@@ -220,7 +240,7 @@
     </div>
 </div>
 
-<section class="bg-black py-14 md:py-24 lg:py-32">
+<section class="bg-black py-14 md:py-24 lg:py-32" id="services">
     <div class="container">
         <p class="text-35 md:text-65 text-white font-bold leading-none"><span class="text-secondary">Explore</span> what we offer</p>
 
@@ -661,6 +681,26 @@
                         <div class="w-full md:w-1/2 px-2">
                             <select class="form-control" name="service" required>
                                 <option selected disabled>Select service/s*</option>
+                                <option>General pest</option>
+                                <option>End of Lease</option>
+                                <option>Termite Warranty Inspections</option>
+                                <option>Bird Management</option>
+                                <option>Termite Management (pre and post-construction)</option>
+                                <option>Safe possum removal</option>
+                                <option>German Cockroaches</option>
+                                <option>Rodent treatments</option>
+                                <option>Ant treatment</option>
+                                <option>Bee treatment</option>
+                                <option>Wasp Treatment</option>
+                                <option>Bird baiting</option>
+                                <option>Mice treatment</option>
+                                <option>Bed bugs</option>
+                                <option>Fleas</option>
+                                <option>Drain flies</option>
+                                <option>Spiders</option>
+                                <option>Large Cockroaches</option>
+                                <option>Carpet Beetles</option>
+                                <option>Solar panel birdproofing</option>
                             </select>
                         </div>
                         <div class="w-full md:w-2/3 px-2">

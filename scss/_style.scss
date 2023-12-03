@@ -109,3 +109,34 @@ section#forms {
         }
     }
 }
+
+#propertyTypeSlider {
+    .slick-dots {
+        bottom: -41px;
+
+        li {
+            height: 12px;
+            width: 12px;
+
+            button {
+                padding: 0;
+                height: 12px;
+                width: 12px;
+
+                &::before {
+                    height: 12px;
+                    width: 12px;
+                    background: #FFE03C;
+                    border-radius: 50%;
+                    content: "";
+                    opacity: 0.2;
+                    line-height: 1;
+                }
+            }
+
+            &.slick-active button::before {
+                opacity: 0.75;
+            }
+        }
+    }
+}
