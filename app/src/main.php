@@ -9,7 +9,7 @@
 
             <div class="w-fit hidden md:block">
                 <div class="flex flex-row justify-center gap-x-4">
-                    <a href="tel:<?= $phone_number ?>" class="btn w-fit h-[48px] bg-primary px-7 text-lg font-bold"><?= $phone_number ?></a>
+                    <a href="tel:<?= $phone_number ?>" class="btn w-fit h-[48px] bg-secondary xl:bg-primary px-7 text-lg font-bold"><?= $phone_number ?></a>
                     <a href="#" class="btn w-fit h-[48px] bg-white px-7 text-lg font-bold uppercase">enquire today</a>
                 </div>
             </div>
@@ -26,8 +26,8 @@
 
     <div class="container header-container">
         <div class="flex flex-wrap mt-12">
-            <div class="w-full md:w-8/12 pb-6 md:pb-0">
-                <div class="px-4 md:px-0">
+            <div class="w-full xl:w-8/12 pb-6 xl:pb-0">
+                <div class="px-4 xl:px-0">
                     <p class="text-lg md:text-2xl uppercase font-medium leading-none">Welcome to rpm pest<br class="md:hidden" /> control hills district</p>
                     <h1 class="text-35 md:text-65 leading-none font-bold pt-4 md:pt-0 xl:w-11/12">Your go-to experts in effective & reliable pest control solutions</h1>
 
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="flex flex-wrap mt-36" id="ctaSlider">
-                    <div class="w-full md:w-1/3">
+                    <div class="w-full lg:w-1/3">
                         <div class="bg-secondary text-black p-4 h-full">
                             <div class="flex flex-wrap">
                                 <div class="w-1/2">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
 
-                    <div class="w-full md:w-1/3">
+                    <div class="w-full lg:w-1/3">
                         <div class="bg-black text-secondary flex flex-col items-center justify-center text-center h-full p-10">
                             <p class="text-4xl leading-7">We take care of our seniors!</p>
                             <p class="uppercase text-55 font-bold py-4">10% OFF</p>
@@ -67,7 +67,7 @@
                         </div>
                     </div>
 
-                    <div class="w-full md:w-1/3">
+                    <div class="w-full lg:w-1/3">
                         <div class="bg-secondary flex flex-col items-center justify-center text-center h-full p-6">
                             <p class="text-4xl leading-7 font-medium">Refer a neighbour and get...</p>
                             <p class="uppercase text-55 font-bold py-5">20% OFF</p>
@@ -79,15 +79,15 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-4/12 flex justify-end bg-black md:bg-transparent">
-                <div class="px-5 py-10 md:p-0 md:w-11/12">
+            <div class="w-full xl:w-4/12 flex justify-end bg-black xl:bg-transparent">
+                <div class="px-5 py-10 xl:p-0 xl:w-11/12">
                     <p class="text-2xl capitalize font-medium text-primary">Don't wait. Get your free quote now!</p>
 
                     <form action="./src/form" method="POST" enctype="multipart/form-data" id="form" class="form flex flex-wrap gap-y-4 -mx-1 pt-8">
-                        <div class="w-1/2 px-1">
+                        <div class="w-full md:w-1/2 px-1">
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
                         </div>
-                        <div class="w-1/2 px-1">
+                        <div class="w-full md:w-1/2 px-1">
                             <input type="tel" class="form-control" name="phonenumber" placeholder="Contact no.*" required />
                         </div>
                         <div class="w-full px-1">
@@ -96,10 +96,10 @@
                         <div class="w-full px-1">
                             <input type="text" class="form-control" name="streetaddress" placeholder="Street address*" required>
                         </div>
-                        <div class="w-1/2 px-1">
+                        <div class="w-full md:w-1/2 px-1">
                             <input type="number" class="form-control" name="postcode" placeholder="Post code*">
                         </div>
-                        <div class="w-1/2 px-1">
+                        <div class="w-full md:w-1/2 px-1">
                             <select class="form-control" name="service" required>
                                 <option selected disabled>Select service/s*</option>
                             </select>
@@ -133,20 +133,20 @@
 
 <div class="container py-14 md:py-28">
     <div class="flex flex-wrap gap-y-6">
-        <div class="w-full md:w-1/2">
-            <p class="text-35 md:text-65 font-bold"><span class="text-primary">20+ years</span> of expertise</p>
+        <div class="w-full lg:w-1/2">
+            <p class="text-35 md:text-65 leading-none font-bold"><span class="text-primary">20+ years</span> of expertise</p>
             <p class="text-grey text-xl md:text-2xl leading-none pt-6 md:pt-10">Rest assured, you're in good hands. Take control today.</p>
         </div>
 
-        <div class="w-full md:w-1/2">
+        <div class="w-full lg:w-1/2">
             <p class="text-xl md:text-2xl font-bold leading-none">Welcome to RPM Pest Control Hills District</p>
             <p class="font-medium text-grey text-lg md:text-xl pt-5">At RPM Pest Control, we are your dedicated partners in pest management, proudly serving the Hills District and the surrounding areas. With over 25 years of experience, we have established ourselves as the go-to experts in providing effective and reliable pest control solutions. Whether you're dealing with general pests, termites, rodents, or any other unwelcome guests, you can trust us to safeguard your home or business.</p>
         </div>
     </div>
 
-    <div class="flex flex-wrap mt-24">
-        <div class="w-full md:w-1/3 border-y-2 md:border-y-0 md:border-x-2 border-grey">
-            <div class="flex flex-wrap justify-between items-center gap-x-4 py-6 md:py-0 md:px-7">
+    <div class="flex items-center justify-center xl:flex-col lg:flex-row flex-wrap mt-24 lg:gap-y-10">
+        <div class="w-full md:w-1/2 xl:w-1/3 border-y-2 lg:border-y-0 lg:border-x-2 border-grey">
+            <div class="flex flex-wrap justify-between items-center gap-x-4 py-6 lg:py-0 md:px-7">
                 <div class="w-fit">
                     <?= renderImg('google.png', 'lib') ?>
                 </div>
@@ -166,8 +166,8 @@
             </div>
         </div>
 
-        <div class="w-full md:w-1/3 border-b-2 md:border-b-0 md:border-r-2 border-grey">
-            <div class="flex flex-wrap justify-between items-center gap-x-4 py-6 md:py-0 md:px-7">
+        <div class="w-full md:w-1/2 xl:w-1/3 border-b-2 lg:border-b-0 lg:border-r-2 border-grey">
+            <div class="flex flex-wrap justify-between items-center gap-x-4 py-6 lg:py-0 md:px-7">
                 <div class="w-fit">
                     <?= renderImg('facebook.png', 'lib') ?>
                 </div>
@@ -187,8 +187,8 @@
             </div>
         </div>
 
-        <div class="w-full md:w-1/3 border-b-2 md:border-b-0 md:border-r-2 border-grey">
-            <div class="flex flex-wrap justify-between items-center py-6 md:py-0 md:px-7">
+        <div class="w-full md:w-1/2 xl:w-1/3 border-b-2 lg:border-b-0 lg:border-l-2 xl:border-l-0 lg:border-r-2 border-grey">
+            <div class="flex flex-wrap justify-between items-center py-6 lg:py-0 md:px-7">
                 <div class="w-5/12">
                     <p class="text-base leading-4">Servicing<br /> The Hills District & surrounding areas</p>
                 </div>
@@ -203,7 +203,7 @@
     <p class="text-grey text-xl md:text-2xl leading-none pt-6 md:pt-10">We believe in transparent pricing. You won't find any hidden fees when you choose RPM Pest Control Hills District.</p>
 
     <div class="md:h-[234px] w-full mt-12 call-out-fee p-6 flex flex-wrap justify-between items-center gap-y-60">
-        <div class="w-full md:w-2/12 bg-dark flex flex-col justify-center items-center rounded-[10px] p-5">
+        <div class="w-full md:w-1/3 lg:w-3/12 xl:w-2/12 bg-dark flex flex-col justify-center items-center rounded-[10px] p-5">
             <p class="text-55 font-bold text-white">$0</p>
             <p class="text-secondary text-2xl pt-2 pb-5">Call out fee!</p>
 
@@ -212,18 +212,18 @@
             </svg>
         </div>
 
-        <div class="w-full md:w-3/12">
+        <div class="w-full md:w-1/3 lg:w-3/12">
             <a href="#" class="btn h-[50px] bg-secondary px-16 text-lg font-bold uppercase w-full md:w-fit">Claim Now</a>
         </div>
     </div>
 </div>
 
-<section class="bg-black py-14 md:py-32">
+<section class="bg-black py-14 md:py-24 lg:py-32">
     <div class="container">
         <p class="text-35 md:text-65 text-white font-bold leading-none"><span class="text-secondary">Explore</span> what we offer</p>
 
         <div class="flex flex-wrap mt-11 md:mt-24 mb-10">
-            <div class="w-full md:w-1/3 bg-primary">
+            <div class="w-full lg:w-5/12 xl:w-1/3 bg-primary">
                 <div class="bg-secondary p-8 leading-none">
                     <p class="text-base md:text-xl font-bold">Our services</p>
                     <p class="text-2xl md:text-4xl font-bold">General Pest Control</p>
@@ -237,8 +237,8 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-2/3 flex justify-end items-center explore p-5 pt-[420px] md:p-14">
-                <div class="w-full md:w-1/2 bg-dark text-white p-5">
+            <div class="w-full lg:w-7/12 xl:w-2/3 flex justify-end items-center explore p-5 pt-[420px] md:p-14">
+                <div class="w-full md:w-2/3 lg:w-8/12 xl:w-1/2 bg-dark text-white p-5">
                     <div class="flex flex-wrap">
                         <div class="w-7/12">
                             <p class="text-4xl font-bold leading-7">General pest control special offer</p>
@@ -311,7 +311,7 @@
 
         <div class="flex flex-wrap -mx-1.5 gap-y-5" id="servicesSlider">
             <?php foreach ($services as $key => $service) : ?>
-                <div class="w-full md:w-1/3 px-1.5">
+                <div class="w-full lg:w-1/2 xl:w-1/3 px-1.5">
                     <div class="h-full flex flex-col">
                         <div class="bg-secondary pt-4 px-4 pb-6">
                             <div class="h-[312px] w-full rounded-lg overflow-hidden"><?= renderImg('service-' . $key + 1 . '.jpg', 'lib', 'h-full w-full object-cover') ?></div>
@@ -331,7 +331,7 @@
             <?php endforeach; ?>
         </div>
 
-        <div class="flex justify-end gap-x-2 mt-5 md:hidden">
+        <div class="flex justify-end gap-x-2 mt-5 lg:hidden">
             <div class="w-[50px] h-[50px] border-2 border-primary flex justify-center items-center bg-black cursor-pointer" id="service-prev">
                 <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.0454 5.3183C20.4931 5.3183 20.856 5.68122 20.856 6.12891C20.856 6.57659 20.4931 6.93951 20.0454 6.93951V5.3183ZM0.422983 6.70209C0.106421 6.38553 0.106421 5.87228 0.422983 5.55572L5.58165 0.397056C5.89821 0.0804944 6.41146 0.0804944 6.72802 0.397056C7.04458 0.713617 7.04458 1.22686 6.72802 1.54343L2.14254 6.12891L6.72802 10.7144C7.04458 11.0309 7.04458 11.5442 6.72802 11.8608C6.41146 12.1773 5.89821 12.1773 5.58165 11.8608L0.422983 6.70209ZM20.0454 6.93951H0.996168V5.3183H20.0454V6.93951Z" fill="#FFE03B" />
@@ -345,14 +345,14 @@
             </div>
         </div>
 
-        <p class="text-35 md:text-65 text-center font-bold text-white md:leading-relaxed mt-16 md:mt-44">We've got <span class="text-primary">all your services</span> covered!</p>
+        <p class="text-35 md:text-65 text-center font-bold text-white leading-none xl:leading-relaxed mt-16 md:mt-32 lg:mt-44">We've got <span class="text-primary">all your services</span> covered!</p>
 
         <div class="flex flex-row justify-center gap-x-4 mt-10">
             <a href="#form" class="btn w-fit h-[48px] bg-primary px-4 md:px-7 text-lg font-bold uppercase">enquire today</a>
             <a href="tel:<?= $phone_number ?>" class="btn w-fit h-[48px] bg-white px-4 md:px-7 text-lg font-bold uppercase">Call | <?= $phone_number ?></a>
         </div>
 
-        <div class="pt-12 md:hidden" id="propertyTypeSlider">
+        <div class="pt-12 lg:hidden" id="propertyTypeSlider">
             <div class="w-full">
                 <div class="bg-white h-[590px] overflow-hidden flex flex-col">
                     <div class="px-5 pt-16 pb-12 text-center grow">
@@ -429,7 +429,7 @@
             </div>
         </div>
 
-        <div class="hidden md:flex flex-wrap pt-12 md:pt-28">
+        <div class="hidden lg:flex flex-wrap pt-12 md:pt-28">
             <div class="w-full md:w-1/3 group">
                 <div class="grayscale group-hover:grayscale-0 group-hover:bg-white duration-150 h-[590px] overflow-hidden flex flex-col">
                     <div class="px-5 pt-16 pb-12 text-center grow">
@@ -509,12 +509,12 @@
 </section>
 
 <section class="flex flex-wrap">
-    <div class="w-full md:w-1/2 h-[375px] md:h-[690px] order-1">
+    <div class="w-full lg:w-1/2 h-[375px] md:h-[690px] order-1">
         <?= renderImg('warranty.jpg', 'lib', 'object-cover h-full w-full') ?>
     </div>
 
-    <div class="w-full md:w-1/2 bg-primary order-2">
-        <div class="py-14 md:py-5 px-4 md:px-32 h-full flex flex-col justify-center items-start lg:w-10/12">
+    <div class="w-full lg:w-1/2 bg-primary order-2">
+        <div class="py-14 lg:py-5 px-4 xl:px-32 h-full flex flex-col justify-center items-start xl:w-10/12">
             <div>
                 <p class="text-35 md:text-65 font-bold leading-none">We offer warranty!</p>
                 <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">We stand behind the quality of our work, offering warranty of up to 6 months on select services.</p>
@@ -525,12 +525,12 @@
 </section>
 
 <section class="flex flex-wrap">
-    <div class="w-full md:w-1/2 h-[375px] md:h-[690px] md:order-2">
+    <div class="w-full lg:w-1/2 h-[375px] md:h-[690px] lg:order-2">
         <?= renderImg('experience.jpg', 'lib', 'object-cover h-full w-full') ?>
     </div>
 
-    <div class="w-full md:w-1/2 bg-primary md:order-1">
-        <div class="py-14 md:py-5 px-4 md:px-32 h-full flex flex-col justify-center items-start ms-auto lg:w-10/12">
+    <div class="w-full lg:w-1/2 bg-primary lg:order-1">
+        <div class="py-14 lg:py-5 px-4 xl:px-32 h-full flex flex-col justify-center items-start ms-auto xl:w-10/12">
             <div>
                 <p class="text-35 md:text-65 font-bold leading-none">With over 20 years of experience</p>
                 <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">We stand behind the quality of our work, offering warranty of up to 6 months on select services.</p>
@@ -541,12 +541,12 @@
 </section>
 
 <section class="flex flex-wrap">
-    <div class="w-full md:w-1/2 h-[375px] md:h-[690px] order-1">
+    <div class="w-full lg:w-1/2 h-[375px] md:h-[690px] order-1">
         <?= renderImg('free-quote.jpg', 'lib', 'object-cover h-full w-full') ?>
     </div>
 
-    <div class="w-full md:w-1/2 bg-primary order-2">
-        <div class="py-14 md:py-5 px-4 md:px-32 h-full flex flex-col justify-center items-start lg:w-10/12">
+    <div class="w-full lg:w-1/2 bg-primary order-2">
+        <div class="py-14 lg:py-5 px-4 xl:px-32 h-full flex flex-col justify-center items-start xl:w-10/12">
             <div>
                 <p class="text-35 md:text-65 font-bold leading-none">Know your options with a free quote.</p>
                 <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">Contact us today for a free, no-obligation quote. We believe in transparency and helping you make an informed decision.</p>
@@ -559,7 +559,7 @@
 <section class="py-14 md:py-36" id="form">
     <div class="container">
         <div class="bg-secondary flex justify-end">
-            <div class="w-full md:w-1/2 flex">
+            <div class="w-full lg:w-1/2 flex">
                 <div class="w-fit">
                     <button class="formToggleButton active" data-target="enquiryForm">
                         Make an enquiry
@@ -575,7 +575,7 @@
 
         <div id="enquiryForm" class="formwrapper">
             <form action="./src/form" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
-                <div class="w-full md:w-1/2 order-1">
+                <div class="w-full lg:w-1/2 order-1">
                     <div class="xl:w-9/12">
                         <p class="text-35 md:text-65 font-bold leading-none">Get in touch with our experts!</p>
                         
@@ -588,7 +588,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 order-2">
+                <div class="w-full lg:w-1/2 order-2">
                     <div class="flex flex-wrap gap-y-4 -mx-2">
                         <div class="w-full md:w-1/2 px-2">
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
@@ -605,7 +605,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 flex gap-x-5 order-4 md:order-3">
+                <div class="w-full lg:w-1/2 flex gap-x-5 order-4 lg:order-3">
                     <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.00012207" y="0.59668" width="41.9711" height="41.9711" rx="10" fill="#0F0D03" />
                         <path d="M11.8549 33.418C12.6954 33.418 13.3767 32.7556 13.3767 31.9384C13.3767 31.1213 12.6954 30.4589 11.8549 30.4589C11.0145 30.4589 10.3331 31.1213 10.3331 31.9384C10.3331 32.7556 11.0145 33.418 11.8549 33.418Z" fill="#FFE03B" />
@@ -621,7 +621,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 order-3 md:order-4">
+                <div class="w-full lg:w-1/2 order-3 lg:order-4">
                     <button class="h-[59px] bg-black w-full text-primary uppercase text-xl md:text-2xl font-bold rounded-1" type="submit">Submit Now</button>
                 </div>
             </form>
@@ -629,7 +629,7 @@
 
         <div id="freeQuoteForm" class="formwrapper hidden">
             <form action="./src/form" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
-                <div class="w-full md:w-1/2 order-1">
+                <div class="w-full lg:w-1/2 order-1">
                     <div class="xl:w-10/12">
                         <p class="text-35 md:text-65 font-bold leading-none">Ready to rid your property of pests?</p>
 
@@ -641,7 +641,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 order-2">
+                <div class="w-full lg:w-1/2 order-2">
                     <div class="flex flex-wrap gap-y-4 -mx-2">
                         <div class="w-full md:w-1/2 px-2">
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
@@ -682,7 +682,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 flex gap-x-5 order-4 md:order-3">
+                <div class="w-full lg:w-1/2 flex gap-x-5 order-4 lg:order-3">
                     <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.00012207" y="0.59668" width="41.9711" height="41.9711" rx="10" fill="#0F0D03" />
                         <path d="M11.8549 33.418C12.6954 33.418 13.3767 32.7556 13.3767 31.9384C13.3767 31.1213 12.6954 30.4589 11.8549 30.4589C11.0145 30.4589 10.3331 31.1213 10.3331 31.9384C10.3331 32.7556 11.0145 33.418 11.8549 33.418Z" fill="#FFE03B" />
@@ -698,7 +698,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 order-3 md:order-4">
+                <div class="w-full lg:w-1/2 order-3 lg:order-4">
                     <button class="h-[59px] bg-black w-full text-primary uppercase text-xl md:text-2xl font-bold rounded-1" type="submit">Get Free Quote</button>
                 </div>
             </form>
@@ -706,14 +706,15 @@
     </div>
 </section>
 
-<section class="testimonials pb-16 md:pb-36">
+<section class="testimonials pb-16 md:pb-24 lg:pb-36">
     <div class="container">
         <div class="flex flex-wrap justify-between items-center gap-y-8">
             <div class="w-full md:w-1/2">
                 <p class="text-35 md:text-65 leading-none font-bold">Our <span class="text-primary">happy</span> clients</p>
                 <p class="text-grey text-xl md:text-2xl leading-none pt-6 md:pt-10">Don't take our word for it; see what our clients have to say...</p>
             </div>
-            <div class="w-full md:w-3/12">
+            
+            <div class="w-full md:w-1/2 lg:w-5/12 xl:w-3/12">
                 <div class="w-full bg-light flex justify-between items-center gap-x-4 p-5 rounded-2xl">
                     <div class="w-fit">
                         <?= renderImg('google.png', 'lib') ?>

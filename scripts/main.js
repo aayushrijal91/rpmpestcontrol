@@ -33,6 +33,30 @@ $("#testimonialSlider").slick({
     autoplay: true,
     responsive: [
         {
+            breakpoint: 1600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerPadding: "100px"
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerPadding: "100px"
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerPadding: "20px"
+            }
+        },
+        {
             breakpoint: 540,
             settings: {
                 slidesToShow: 1,
@@ -44,28 +68,60 @@ $("#testimonialSlider").slick({
 });
 
 $("#propertyTypeSlider").slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     dots: true,
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
 });
 
-if ($(window).width() < 540) {
+if ($(window).width() < 900) {
     $("#ctaSlider").slick({
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         centerMode: true,
         infinite: false,
+        initialSlide: 1,
         centerPadding: "20px",
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    infinite: false,
+                    centerPadding: "20px",
+                    arrows: false,
+                }
+            }
+        ]
     });
 
     $("#servicesSlider").slick({
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         prevArrow: $("#service-prev"),
-        nextArrow: $("#service-next")
+        nextArrow: $("#service-next"),
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     })
 }
 
