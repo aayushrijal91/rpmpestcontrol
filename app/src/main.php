@@ -556,56 +556,146 @@
     </div>
 </section>
 
-<section class="form py-14 md:py-36" id="form">
+<section class="py-14 md:py-36" id="form">
     <div class="container">
-        <form class="bg-primary flex flex-wrap gap-y-24 form py-11 ps-28 pe-11">
-            <div class="w-1/2">
-                <div class="xl:w-9/12">
-                    <p class="text-65 font-bold leading-none">Get in touch with our experts!</p>
-                    <div class="description text-2xl py-10">
-                        <p>Simply fill out your information and we will get back to you ASAP.</p>
-                        <p>Or speak to us today!</p>
-                    </div>
-                    <a href="tel:<?= $phone_number ?>" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">call | <?= $phone_number ?></a>
+        <div class="bg-secondary flex justify-end">
+            <div class="w-full md:w-1/2 flex">
+                <div class="w-fit">
+                    <button class="formToggleButton active" data-target="enquiryForm">
+                        Make an enquiry
+                    </button>
+                </div>
+                <div class="w-fit">
+                    <button class="formToggleButton" data-target="freeQuoteForm">
+                        Request a free quote
+                    </button>
                 </div>
             </div>
-            <div class="w-1/2">
-                <div class="flex flex-wrap gap-y-4">
-                    <div class="w-1/2 px-2">
-                        <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
-                    </div>
-                    <div class="w-1/2 px-2">
-                        <input type="tel" class="form-control" name="phonenumber" placeholder="Contact no.*" required />
-                    </div>
-                    <div class="w-full px-2">
-                        <input type="email" class="form-control" name="emailaddress" placeholder="Email address*" required />
-                    </div>
-                    <div class="w-full px-2">
-                        <textarea name="additionalInformation" class="w-full rounded-[20px] overflow-hidden py-5 px-4" placeholder="Type your enquiry here..." rows="7"></textarea>
-                    </div>
-                    <div class="w-full px-1">
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/2 flex gap-x-5">
-                <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.00012207" y="0.59668" width="41.9711" height="41.9711" rx="10" fill="#0F0D03" />
-                    <path d="M11.8549 33.418C12.6954 33.418 13.3767 32.7556 13.3767 31.9384C13.3767 31.1213 12.6954 30.4589 11.8549 30.4589C11.0145 30.4589 10.3331 31.1213 10.3331 31.9384C10.3331 32.7556 11.0145 33.418 11.8549 33.418Z" fill="#FFE03B" />
-                    <path d="M17.9421 33.418C18.7826 33.418 19.4639 32.7556 19.4639 31.9384C19.4639 31.1213 18.7826 30.4589 17.9421 30.4589C17.1016 30.4589 16.4203 31.1213 16.4203 31.9384C16.4203 32.7556 17.1016 33.418 17.9421 33.418Z" fill="#FFE03B" />
-                    <path d="M24.0293 33.418C24.8697 33.418 25.5511 32.7556 25.5511 31.9384C25.5511 31.1213 24.8697 30.4589 24.0293 30.4589C23.1888 30.4589 22.5075 31.1213 22.5075 31.9384C22.5075 32.7556 23.1888 33.418 24.0293 33.418Z" fill="#FFE03B" />
-                    <path d="M30.1165 33.418C30.9569 33.418 31.6382 32.7556 31.6382 31.9384C31.6382 31.1213 30.9569 30.4589 30.1165 30.4589C29.276 30.4589 28.5947 31.1213 28.5947 31.9384C28.5947 32.7556 29.276 33.418 30.1165 33.418Z" fill="#FFE03B" />
-                    <path d="M27.0729 17.1432H25.5511V14.1842C25.5511 13.007 25.0701 11.878 24.2139 11.0456C23.3577 10.2132 22.1965 9.74561 20.9857 9.74561C19.7749 9.74561 18.6137 10.2132 17.7575 11.0456C16.9013 11.878 16.4203 13.007 16.4203 14.1842V17.1432H14.8985C14.4949 17.1432 14.1078 17.2991 13.8224 17.5766C13.537 17.854 13.3767 18.2303 13.3767 18.6227V26.0203C13.3767 26.4127 13.537 26.7891 13.8224 27.0665C14.1078 27.344 14.4949 27.4999 14.8985 27.4999H27.0729C27.4765 27.4999 27.8635 27.344 28.1489 27.0665C28.4343 26.7891 28.5947 26.4127 28.5947 26.0203V18.6227C28.5947 18.2303 28.4343 17.854 28.1489 17.5766C27.8635 17.2991 27.4765 17.1432 27.0729 17.1432ZM19.4639 17.1432V14.1842C19.4639 13.7918 19.6242 13.4155 19.9096 13.138C20.195 12.8605 20.5821 12.7046 20.9857 12.7046C21.3893 12.7046 21.7764 12.8605 22.0618 13.138C22.3471 13.4155 22.5075 13.7918 22.5075 14.1842V17.1432H19.4639Z" fill="#FFE03B" />
-                </svg>
+        </div>
 
-                <div>
-                    <p class="text-xl font-bold leading-none">Privacy & Security Protection</p>
-                    <p class="text-lg leading-none">All information provided will be kept 100% private &amp; secure.</p>
+        <div id="enquiryForm" class="formwrapper">
+            <form class="bg-primary flex flex-wrap gap-y-24 form p-11">
+                <div class="w-1/2">
+                    <div class="xl:w-9/12 ps-7">
+                        <p class="text-65 font-bold leading-none">Get in touch with our experts!</p>
+                        <div class="description text-2xl py-10">
+                            <p>Simply fill out your information and we will get back to you ASAP.</p>
+                            <p>Or speak to us today!</p>
+                        </div>
+                        <a href="tel:<?= $phone_number ?>" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">call | <?= $phone_number ?></a>
+                    </div>
                 </div>
-            </div>
-            <div class="w-1/2">
-                <button class="h-[59px] bg-secondary w-full text-black uppercase text-2xl font-bold rounded-1" type="submit">Get Free Quote</button>
-            </div>
-        </form>
+                <div class="w-1/2">
+                    <div class="flex flex-wrap gap-y-4">
+                        <div class="w-1/2 px-2">
+                            <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
+                        </div>
+                        <div class="w-1/2 px-2">
+                            <input type="tel" class="form-control" name="phonenumber" placeholder="Contact no.*" required />
+                        </div>
+                        <div class="w-full px-2">
+                            <input type="email" class="form-control" name="emailaddress" placeholder="Email address*" required />
+                        </div>
+                        <div class="w-full px-2">
+                            <textarea name="additionalInformation" class="w-full rounded-[20px] overflow-hidden py-5 px-4" placeholder="Type your enquiry here..." rows="7"></textarea>
+                        </div>
+                        <div class="w-full px-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2 flex gap-x-5">
+                    <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.00012207" y="0.59668" width="41.9711" height="41.9711" rx="10" fill="#0F0D03" />
+                        <path d="M11.8549 33.418C12.6954 33.418 13.3767 32.7556 13.3767 31.9384C13.3767 31.1213 12.6954 30.4589 11.8549 30.4589C11.0145 30.4589 10.3331 31.1213 10.3331 31.9384C10.3331 32.7556 11.0145 33.418 11.8549 33.418Z" fill="#FFE03B" />
+                        <path d="M17.9421 33.418C18.7826 33.418 19.4639 32.7556 19.4639 31.9384C19.4639 31.1213 18.7826 30.4589 17.9421 30.4589C17.1016 30.4589 16.4203 31.1213 16.4203 31.9384C16.4203 32.7556 17.1016 33.418 17.9421 33.418Z" fill="#FFE03B" />
+                        <path d="M24.0293 33.418C24.8697 33.418 25.5511 32.7556 25.5511 31.9384C25.5511 31.1213 24.8697 30.4589 24.0293 30.4589C23.1888 30.4589 22.5075 31.1213 22.5075 31.9384C22.5075 32.7556 23.1888 33.418 24.0293 33.418Z" fill="#FFE03B" />
+                        <path d="M30.1165 33.418C30.9569 33.418 31.6382 32.7556 31.6382 31.9384C31.6382 31.1213 30.9569 30.4589 30.1165 30.4589C29.276 30.4589 28.5947 31.1213 28.5947 31.9384C28.5947 32.7556 29.276 33.418 30.1165 33.418Z" fill="#FFE03B" />
+                        <path d="M27.0729 17.1432H25.5511V14.1842C25.5511 13.007 25.0701 11.878 24.2139 11.0456C23.3577 10.2132 22.1965 9.74561 20.9857 9.74561C19.7749 9.74561 18.6137 10.2132 17.7575 11.0456C16.9013 11.878 16.4203 13.007 16.4203 14.1842V17.1432H14.8985C14.4949 17.1432 14.1078 17.2991 13.8224 17.5766C13.537 17.854 13.3767 18.2303 13.3767 18.6227V26.0203C13.3767 26.4127 13.537 26.7891 13.8224 27.0665C14.1078 27.344 14.4949 27.4999 14.8985 27.4999H27.0729C27.4765 27.4999 27.8635 27.344 28.1489 27.0665C28.4343 26.7891 28.5947 26.4127 28.5947 26.0203V18.6227C28.5947 18.2303 28.4343 17.854 28.1489 17.5766C27.8635 17.2991 27.4765 17.1432 27.0729 17.1432ZM19.4639 17.1432V14.1842C19.4639 13.7918 19.6242 13.4155 19.9096 13.138C20.195 12.8605 20.5821 12.7046 20.9857 12.7046C21.3893 12.7046 21.7764 12.8605 22.0618 13.138C22.3471 13.4155 22.5075 13.7918 22.5075 14.1842V17.1432H19.4639Z" fill="#FFE03B" />
+                    </svg>
+
+                    <div>
+                        <p class="text-xl font-bold leading-none">Privacy & Security Protection</p>
+                        <p class="text-lg leading-none">All information provided will be kept 100% private &amp; secure.</p>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <button class="h-[59px] bg-black w-full text-primary uppercase text-2xl font-bold rounded-1" type="submit">Get Free Quote</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="freeQuoteForm" class="formwrapper hidden">
+            <form class="bg-primary flex flex-wrap gap-y-10 form p-11">
+                <div class="w-1/2">
+                    <div class="xl:w-9/12 ps-7">
+                        <p class="text-65 font-bold leading-none">Get in touch with our experts!</p>
+                        <div class="description text-2xl py-10">
+                            <p>Simply fill out your information and we will get back to you ASAP.</p>
+                            <p>Or speak to us today!</p>
+                        </div>
+                        <a href="tel:<?= $phone_number ?>" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">call | <?= $phone_number ?></a>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="flex flex-wrap gap-y-4">
+                        <div class="w-1/2 px-2">
+                            <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
+                        </div>
+                        <div class="w-1/2 px-2">
+                            <input type="tel" class="form-control" name="phonenumber" placeholder="Contact no.*" required />
+                        </div>
+                        <div class="w-1/2 px-2">
+                            <input type="email" class="form-control" name="emailaddress" placeholder="Email address*" required />
+                        </div>
+                        <div class="w-1/2 px-2">
+                            <select class="form-control" name="service" required>
+                                <option selected disabled>Select service/s*</option>
+                            </select>
+                        </div>
+                        <div class="w-2/3 px-2">
+                            <input type="text" class="form-control" name="streetAddress" placeholder="Street address" />
+                        </div>
+                        <div class="w-1/3 px-2">
+                            <input type="number" class="form-control" name="postcode" placeholder="Post code" />
+                        </div>
+                        <div class="w-full px-2">
+                            <textarea name="additionalInformation" class="w-full rounded-[20px] overflow-hidden py-5 px-4" placeholder="Type your enquiry here..." rows="4"></textarea>
+                        </div>
+                        <div class="w-full px-2">
+                            <label for="fileUpload" class="flex flex-col justify-center items-center text-black cursor pointer text-xl font-medium">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.8508 15.5463L16.5804 7.2373L9.30997 15.5463H13.4645V23.8554H19.6962V15.5463H23.8508Z" stroke="#0F0D03" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M31.0063 23.1411V27.0755C31.0063 28.119 30.5918 29.1197 29.854 29.8575C29.1161 30.5954 28.1154 31.0099 27.0719 31.0099H23.1375" stroke="#0F0D03" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2.15417 23.1411V27.0755C2.15417 28.119 2.56869 29.1197 3.30653 29.8575C4.04437 30.5954 5.0451 31.0099 6.08856 31.0099H10.0229" stroke="#0F0D03" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M31.0063 10.0265V6.0921C31.0063 5.04864 30.5918 4.04791 29.854 3.31007C29.1161 2.57223 28.1154 2.15771 27.0719 2.15771H23.1375" stroke="#0F0D03" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2.15417 10.0265V6.0921C2.15417 5.04864 2.56869 4.04791 3.30653 3.31007C4.04437 2.57223 5.0451 2.15771 6.08856 2.15771H10.0229" stroke="#0F0D03" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p id="">Upload Images (optional)</p>
+                            </label>
+                            <input type="file" id="fileUpload" name="fileUpload" class="hidden" />
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2 flex gap-x-5">
+                    <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.00012207" y="0.59668" width="41.9711" height="41.9711" rx="10" fill="#0F0D03" />
+                        <path d="M11.8549 33.418C12.6954 33.418 13.3767 32.7556 13.3767 31.9384C13.3767 31.1213 12.6954 30.4589 11.8549 30.4589C11.0145 30.4589 10.3331 31.1213 10.3331 31.9384C10.3331 32.7556 11.0145 33.418 11.8549 33.418Z" fill="#FFE03B" />
+                        <path d="M17.9421 33.418C18.7826 33.418 19.4639 32.7556 19.4639 31.9384C19.4639 31.1213 18.7826 30.4589 17.9421 30.4589C17.1016 30.4589 16.4203 31.1213 16.4203 31.9384C16.4203 32.7556 17.1016 33.418 17.9421 33.418Z" fill="#FFE03B" />
+                        <path d="M24.0293 33.418C24.8697 33.418 25.5511 32.7556 25.5511 31.9384C25.5511 31.1213 24.8697 30.4589 24.0293 30.4589C23.1888 30.4589 22.5075 31.1213 22.5075 31.9384C22.5075 32.7556 23.1888 33.418 24.0293 33.418Z" fill="#FFE03B" />
+                        <path d="M30.1165 33.418C30.9569 33.418 31.6382 32.7556 31.6382 31.9384C31.6382 31.1213 30.9569 30.4589 30.1165 30.4589C29.276 30.4589 28.5947 31.1213 28.5947 31.9384C28.5947 32.7556 29.276 33.418 30.1165 33.418Z" fill="#FFE03B" />
+                        <path d="M27.0729 17.1432H25.5511V14.1842C25.5511 13.007 25.0701 11.878 24.2139 11.0456C23.3577 10.2132 22.1965 9.74561 20.9857 9.74561C19.7749 9.74561 18.6137 10.2132 17.7575 11.0456C16.9013 11.878 16.4203 13.007 16.4203 14.1842V17.1432H14.8985C14.4949 17.1432 14.1078 17.2991 13.8224 17.5766C13.537 17.854 13.3767 18.2303 13.3767 18.6227V26.0203C13.3767 26.4127 13.537 26.7891 13.8224 27.0665C14.1078 27.344 14.4949 27.4999 14.8985 27.4999H27.0729C27.4765 27.4999 27.8635 27.344 28.1489 27.0665C28.4343 26.7891 28.5947 26.4127 28.5947 26.0203V18.6227C28.5947 18.2303 28.4343 17.854 28.1489 17.5766C27.8635 17.2991 27.4765 17.1432 27.0729 17.1432ZM19.4639 17.1432V14.1842C19.4639 13.7918 19.6242 13.4155 19.9096 13.138C20.195 12.8605 20.5821 12.7046 20.9857 12.7046C21.3893 12.7046 21.7764 12.8605 22.0618 13.138C22.3471 13.4155 22.5075 13.7918 22.5075 14.1842V17.1432H19.4639Z" fill="#FFE03B" />
+                    </svg>
+
+                    <div>
+                        <p class="text-xl font-bold leading-none">Privacy & Security Protection</p>
+                        <p class="text-lg leading-none">All information provided will be kept 100% private &amp; secure.</p>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <button class="h-[59px] bg-black w-full text-primary uppercase text-2xl font-bold rounded-1" type="submit">Get Free Quote</button>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 

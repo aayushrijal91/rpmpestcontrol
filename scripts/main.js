@@ -51,7 +51,7 @@ $("#propertyTypeSlider").slick({
     dots: true,
 });
 
-if($(window).width() < 540) {
+if ($(window).width() < 540) {
     $("#ctaSlider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -68,3 +68,10 @@ if($(window).width() < 540) {
         nextArrow: $("#service-next")
     })
 }
+
+$('.formToggleButton').on('click', function () {
+    $('.formToggleButton').removeClass('active');
+    $(this).addClass('active');
+    $('.formwrapper').hide();
+    $(`#${$(this).data('target')}`).fadeIn();
+})
