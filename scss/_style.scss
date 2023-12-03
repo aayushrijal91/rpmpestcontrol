@@ -1,0 +1,47 @@
+header {
+    background: linear-gradient(90deg, #FFE03C 0% 61.3%, #0F0D03 61.3% 100%);
+}
+
+form.form {
+    input.form-control {
+        height: 52px;
+        background: #fffef8;
+        border-radius: 100px;
+        width: 100%;
+        outline: none;
+        box-shadow: none;
+        padding: 4px 18px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    select.form-control {
+        @apply border-2 border-primary rounded-full h-[52px] w-full bg-black text-primary px-5;
+    }
+}
+
+.call-out-fee {
+    background: imgUrl('call-out-fee.jpg') center;
+    background-size: cover;
+}
+
+.explore {
+    background: imgUrl('explore.jpg') center;
+    background-size: cover;
+}
+
+section.testimonials {
+    #testimonialSlider {
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-slide {
+            height: inherit;
+            border-radius: 1px;
+            background: #F3F2EB;
+            padding: 37px 34px;
+            margin: 0 9px;
+        }
+    }
+}

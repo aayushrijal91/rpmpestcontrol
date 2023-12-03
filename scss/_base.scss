@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+
+@function imgUrl($file, $path: "background"){
+@return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    @apply font-darker-groteque text-xl p-0 m-0 overflow-x-hidden;
+}
+
+.btn {
+    @apply inline-flex justify-center items-center;
+}
+
+.container {
+    max-width: 1320px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.description {
+    p {
+        margin-bottom: 16px;
+    }
+}
+
+//Go To Top
+#return-to-top {
+    @apply border-2 border-white shadow-lg bg-secondary hover:bg-dark w-[50px] h-[50px] right-[55px] bottom-[95px] rounded-full transition-all duration-100 ease-linear flex justify-center items-center fixed z-10 drop-shadow-2xl;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-primary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #022444;
+}
