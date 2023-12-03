@@ -28,5 +28,43 @@ $("#testimonialSlider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "260px"
-})
+    centerPadding: "260px",
+    arrows: false,
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerPadding: "20px"
+            }
+        }
+    ]
+});
+
+$("#propertyTypeSlider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    dots: true,
+});
+
+if($(window).width() < 540) {
+    $("#ctaSlider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        infinite: false,
+        centerPadding: "20px",
+        arrows: false,
+    });
+
+    $("#servicesSlider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $("#service-prev"),
+        nextArrow: $("#service-next")
+    })
+}

@@ -1,65 +1,86 @@
 <header>
     <div class="container">
         <div class="flex flex-wrap justify-between items-center py-5">
-            <div class="w-fit">
+            <div class="w-3/12 md:w-fit">
                 <a href="./">
                     <?= renderImg('logo.png', 'logo') ?>
                 </a>
             </div>
-            <div class="w-fit">
+
+            <div class="w-fit hidden md:block">
                 <div class="flex flex-row justify-center gap-x-4">
                     <a href="tel:<?= $phone_number ?>" class="btn w-fit h-[48px] bg-primary px-7 text-lg font-bold"><?= $phone_number ?></a>
                     <a href="#" class="btn w-fit h-[48px] bg-white px-7 text-lg font-bold uppercase">enquire today</a>
                 </div>
             </div>
+
+            <div class="w-fit md:hidden">
+                <a href="tel:<?= $phone_number ?>" class="h-[43px] w-[43px] bg-secondary flex justify-center items-center">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2952 0.814457C16.0341 0.32641 16.8736 0.0469322 17.7246 0.00543594C20.1997 -0.115629 22.1153 1.79993 21.9946 4.27571C21.7739 8.78776 19.8093 13.1159 16.4626 16.4626C13.1157 19.8093 8.78764 21.774 4.27538 21.9946C1.79995 22.1151 -0.115631 20.1998 0.00543404 17.7247C0.0471134 16.8736 0.326412 16.0341 0.81356 15.2967C0.815907 15.2933 0.818251 15.2897 0.820417 15.2863L7.52791 13.9075C7.87884 14.1915 8.17492 14.5326 8.41019 14.9247L8.73911 15.4728L9.35959 15.1623C10.5969 14.5431 11.7298 13.7238 12.7269 12.7268C13.7237 11.7299 14.5432 10.597 15.1624 9.35952L15.4729 8.73904L14.9248 8.41013C14.5327 8.17486 14.1917 7.87878 13.9076 7.52785L15.2864 0.820412C15.2894 0.818426 15.2923 0.816442 15.2954 0.814457H15.2952Z" fill="black" />
+                    </svg>
+                </a>
+            </div>
         </div>
+    </div>
 
+    <div class="container header-container">
         <div class="flex flex-wrap mt-12">
-            <div class="w-8/12">
-                <p class="text-2xl uppercase font-medium">Welcome to rpm pest control hills district</p>
-                <h1 class="text-65 leading-none font-bold xl:w-11/12">Your go-to experts in effective & reliable pest control solutions</h1>
+            <div class="w-full md:w-8/12 pb-6 md:pb-0">
+                <div class="px-4 md:px-0">
+                    <p class="text-lg md:text-2xl uppercase font-medium leading-none">Welcome to rpm pest<br class="md:hidden" /> control hills district</p>
+                    <h1 class="text-35 md:text-65 leading-none font-bold pt-4 md:pt-0 xl:w-11/12">Your go-to experts in effective & reliable pest control solutions</h1>
 
-                <div class="flex mt-10">
-                    <a href="#" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-16">Services</a>
+                    <div class="flex mt-10">
+                        <a href="#" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-10 md:px-16">Services</a>
+                    </div>
                 </div>
 
-                <div class="flex flex-wrap bg-secondary mt-36">
-                    <div class="w-1/3 bg-secondary text-black p-4">
-                        <div class="flex flex-wrap">
-                            <div class="w-1/2">
-                                <p class="text-4xl font-bold leading-7">General pest service</p>
+                <div class="flex flex-wrap mt-36" id="ctaSlider">
+                    <div class="w-full md:w-1/3">
+                        <div class="bg-secondary text-black p-4 h-full">
+                            <div class="flex flex-wrap">
+                                <div class="w-1/2">
+                                    <p class="text-4xl font-bold leading-7">General pest service</p>
+                                </div>
+                                <div class="w-1/2 px-4 md:px-1">
+                                    <p class="text-2xl font-medium">From</p>
+                                    <p class="text-55 font-extrabold">$165</p>
+                                </div>
                             </div>
-                            <div class="w-1/2">
-                                <p class="text-2xl font-medium">From</p>
-                                <p class="text-55 font-extrabold">$165</p>
-                            </div>
-                        </div>
-                        <p class="text-2xl font-medium">Add rodent removal</p>
-                        <p class="text-4xl font-bold leading-none">+ $80</p>
+                            <p class="text-2xl font-medium">Add rodent removal</p>
+                            <p class="text-4xl font-bold leading-none">+ $80</p>
 
-                        <div class="flex mt-10">
-                            <a href="#" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">Enquire Today</a>
+                            <div class="flex mt-10">
+                                <a href="#" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">Enquire Today</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-1/3 bg-black text-secondary flex flex-col items-center justify-center text-center p-10">
-                        <p class="text-4xl leading-7">We take care of our seniors!</p>
-                        <p class="uppercase text-55 font-bold py-4">10% OFF</p>
-                        <div class="flex mt-7">
-                            <a href="#" class="h-[50px] border-2 border-secondary inline-flex justify-center items-center uppercase text-lg font-bold px-7">Claim Now</a>
+
+                    <div class="w-full md:w-1/3">
+                        <div class="bg-black text-secondary flex flex-col items-center justify-center text-center h-full p-10">
+                            <p class="text-4xl leading-7">We take care of our seniors!</p>
+                            <p class="uppercase text-55 font-bold py-4">10% OFF</p>
+                            <div class="flex mt-7">
+                                <a href="#" class="h-[50px] border-2 border-secondary inline-flex justify-center items-center uppercase text-lg font-bold px-7">Claim Now</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-1/3 flex flex-col items-center justify-center text-center p-6">
-                        <p class="text-4xl leading-7 font-medium">Refer a neighbour and get...</p>
-                        <p class="uppercase text-55 font-bold py-5">20% OFF</p>
-                        <div class="flex mt-7">
-                            <a href="#" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">Claim Now</a>
+
+                    <div class="w-full md:w-1/3">
+                        <div class="bg-secondary flex flex-col items-center justify-center text-center h-full p-6">
+                            <p class="text-4xl leading-7 font-medium">Refer a neighbour and get...</p>
+                            <p class="uppercase text-55 font-bold py-5">20% OFF</p>
+                            <div class="flex mt-7">
+                                <a href="#" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">Claim Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="w-4/12 flex justify-end">
-                <div class="w-11/12">
+            <div class="w-full md:w-4/12 flex justify-end bg-black md:bg-transparent">
+                <div class="px-5 py-10 md:p-0 md:w-11/12">
                     <p class="text-2xl capitalize font-medium text-primary">Don't wait. Get your free quote now!</p>
 
                     <form action="" id="form" class="form flex flex-wrap gap-y-4 -mx-1 pt-8">
@@ -110,22 +131,22 @@
 </header>
 
 
-<div class="container my-28">
-    <div class="flex flex-wrap">
+<div class="container py-14 md:py-28">
+    <div class="flex flex-wrap gap-y-6">
         <div class="w-full md:w-1/2">
-            <p class="text-65 font-bold"><span class="text-primary">20+ years</span> of expertise</p>
-            <p class="text-grey text-2xl leading-none pt-10">Rest assured, you're in good hands. Take control today.</p>
+            <p class="text-35 md:text-65 font-bold"><span class="text-primary">20+ years</span> of expertise</p>
+            <p class="text-grey text-xl md:text-2xl leading-none pt-6 md:pt-10">Rest assured, you're in good hands. Take control today.</p>
         </div>
 
         <div class="w-full md:w-1/2">
-            <p class="text-2xl font-bold">Welcome to RPM Pest Control Hills District</p>
-            <p class="font-medium text-grey text-xl pt-5">At RPM Pest Control, we are your dedicated partners in pest management, proudly serving the Hills District and the surrounding areas. With over 25 years of experience, we have established ourselves as the go-to experts in providing effective and reliable pest control solutions. Whether you're dealing with general pests, termites, rodents, or any other unwelcome guests, you can trust us to safeguard your home or business.</p>
+            <p class="text-xl md:text-2xl font-bold leading-none">Welcome to RPM Pest Control Hills District</p>
+            <p class="font-medium text-grey text-lg md:text-xl pt-5">At RPM Pest Control, we are your dedicated partners in pest management, proudly serving the Hills District and the surrounding areas. With over 25 years of experience, we have established ourselves as the go-to experts in providing effective and reliable pest control solutions. Whether you're dealing with general pests, termites, rodents, or any other unwelcome guests, you can trust us to safeguard your home or business.</p>
         </div>
     </div>
 
     <div class="flex flex-wrap mt-24">
-        <div class="w-1/3 border-l-2 border-r-2 border-grey">
-            <div class="flex flex-wrap justify-between items-center gap-x-4 px-7">
+        <div class="w-full md:w-1/3 border-y-2 md:border-y-0 md:border-x-2 border-grey">
+            <div class="flex flex-wrap justify-between items-center gap-x-4 py-6 md:py-0 md:px-7">
                 <div class="w-fit">
                     <?= renderImg('google.png', 'lib') ?>
                 </div>
@@ -145,8 +166,8 @@
             </div>
         </div>
 
-        <div class="w-1/3 border-r-2 border-grey">
-            <div class="flex flex-wrap justify-between items-center gap-x-4 px-7">
+        <div class="w-full md:w-1/3 border-b-2 md:border-b-0 md:border-r-2 border-grey">
+            <div class="flex flex-wrap justify-between items-center gap-x-4 py-6 md:py-0 md:px-7">
                 <div class="w-fit">
                     <?= renderImg('facebook.png', 'lib') ?>
                 </div>
@@ -166,8 +187,8 @@
             </div>
         </div>
 
-        <div class="w-1/3 border-r-2 border-grey">
-            <div class="flex flex-wrap justify-between items-center px-7">
+        <div class="w-full md:w-1/3 border-b-2 md:border-b-0 md:border-r-2 border-grey">
+            <div class="flex flex-wrap justify-between items-center py-6 md:py-0 md:px-7">
                 <div class="w-5/12">
                     <p class="text-base leading-4">Servicing<br /> The Hills District & surrounding areas</p>
                 </div>
@@ -178,11 +199,11 @@
         </div>
     </div>
 
-    <p class="text-65 font-bold mt-24"><span class="text-primary">Transparent & fair</span> pricing</p>
-    <p class="text-grey text-2xl leading-none pt-10">We believe in transparent pricing. You won't find any hidden fees when you choose RPM Pest Control Hills District.</p>
+    <p class="text-35 md:text-65 font-bold leading-none mt-14 md:mt-24"><span class="text-primary">Transparent & fair</span> pricing</p>
+    <p class="text-grey text-xl md:text-2xl leading-none pt-6 md:pt-10">We believe in transparent pricing. You won't find any hidden fees when you choose RPM Pest Control Hills District.</p>
 
-    <div class="h-[234px] w-full mt-12 call-out-fee p-6 flex flex-wrap justify-between items-center">
-        <div class="w-2/12 bg-dark flex flex-col justify-center items-center rounded-[10px] p-5">
+    <div class="md:h-[234px] w-full mt-12 call-out-fee p-6 flex flex-wrap justify-between items-center gap-y-60">
+        <div class="w-full md:w-2/12 bg-dark flex flex-col justify-center items-center rounded-[10px] p-5">
             <p class="text-55 font-bold text-white">$0</p>
             <p class="text-secondary text-2xl pt-2 pb-5">Call out fee!</p>
 
@@ -191,24 +212,24 @@
             </svg>
         </div>
 
-        <div class="w-3/12">
-            <a href="#" class="btn h-[50px] bg-secondary px-16 text-lg font-bold uppercase">Claim Now</a>
+        <div class="w-full md:w-3/12">
+            <a href="#" class="btn h-[50px] bg-secondary px-16 text-lg font-bold uppercase w-full md:w-fit">Claim Now</a>
         </div>
     </div>
 </div>
 
-<section class="bg-black py-32">
+<section class="bg-black py-14 md:py-32">
     <div class="container">
-        <p class="text-65 text-white font-bold leading-none"><span class="text-secondary">Explore</span> what we offer</p>
+        <p class="text-35 md:text-65 text-white font-bold leading-none"><span class="text-secondary">Explore</span> what we offer</p>
 
-        <div class="flex flex-wrap mt-24 mb-10">
-            <div class="w-1/3 bg-primary">
+        <div class="flex flex-wrap mt-11 md:mt-24 mb-10">
+            <div class="w-full md:w-1/3 bg-primary">
                 <div class="bg-secondary p-8 leading-none">
-                    <p class="text-xl font-bold">Our services</p>
-                    <p class="text-4xl font-bold">General Pest Control</p>
+                    <p class="text-base md:text-xl font-bold">Our services</p>
+                    <p class="text-2xl md:text-4xl font-bold">General Pest Control</p>
                 </div>
                 <div class="p-8">
-                    <p class="text-xl leading-none font-medium mb-12">
+                    <p class="text-lg md:text-xl leading-none font-medium mb-12">
                         Put an end to your pest problems with our comprehensive general pest control services. From spiders and cockroaches to bed bugs and fleas, we have the expertise to keep your property pest-free.
                     </p>
 
@@ -216,8 +237,8 @@
                 </div>
             </div>
 
-            <div class="w-2/3 flex justify-end items-center explore p-14">
-                <div class="w-1/2 bg-dark text-white p-5">
+            <div class="w-full md:w-2/3 flex justify-end items-center explore p-5 pt-[420px] md:p-14">
+                <div class="w-full md:w-1/2 bg-dark text-white p-5">
                     <div class="flex flex-wrap">
                         <div class="w-7/12">
                             <p class="text-4xl font-bold leading-7">General pest control special offer</p>
@@ -288,18 +309,18 @@
             ],
         ]; ?>
 
-        <div class="flex flex-wrap -mx-1.5 gap-y-5">
+        <div class="flex flex-wrap -mx-1.5 gap-y-5" id="servicesSlider">
             <?php foreach ($services as $key => $service) : ?>
-                <div class="w-1/3 px-1.5">
+                <div class="w-full md:w-1/3 px-1.5">
                     <div class="h-full flex flex-col">
                         <div class="bg-secondary pt-4 px-4 pb-6">
                             <div class="h-[312px] w-full rounded-lg overflow-hidden"><?= renderImg('service-' . $key + 1 . '.jpg', 'lib', 'h-full w-full object-cover') ?></div>
 
-                            <p class="text-xl font-medium pt-4">Our services</p>
-                            <p class="text-3xl font-bold leading-none"><?= $service['title'] ?></p>
+                            <p class="text-lg md:text-xl font-medium pt-4">Our services</p>
+                            <p class="text-2xl md:text-3xl font-bold leading-none"><?= $service['title'] ?></p>
                         </div>
                         <div class="p-6 bg-primary grow flex flex-col justify-between items-start">
-                            <div class="description text-xl leading-none font-medium mb-12">
+                            <div class="description text-lg md:text-xl leading-none font-medium mb-5 md:mb-12">
                                 <?= $service['description'] ?>
                             </div>
 
@@ -310,14 +331,106 @@
             <?php endforeach; ?>
         </div>
 
-        <p class="text-65 text-center font-bold text-white leading-relaxed mt-44">We've got <span class="text-primary">all your services</span> covered!</p>
-        <div class="flex flex-row justify-center gap-x-4 mt-10">
-            <a href="#form" class="btn w-fit h-[48px] bg-primary px-7 text-lg font-bold uppercase">enquire today</a>
-            <a href="tel:<?= $phone_number ?>" class="btn w-fit h-[48px] bg-white px-7 text-lg font-bold uppercase">Call | <?= $phone_number ?></a>
+        <div class="flex justify-end gap-x-2 mt-5 md:hidden">
+            <div class="w-[50px] h-[50px] border-2 border-primary flex justify-center items-center bg-black cursor-pointer" id="service-prev">
+                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0454 5.3183C20.4931 5.3183 20.856 5.68122 20.856 6.12891C20.856 6.57659 20.4931 6.93951 20.0454 6.93951V5.3183ZM0.422983 6.70209C0.106421 6.38553 0.106421 5.87228 0.422983 5.55572L5.58165 0.397056C5.89821 0.0804944 6.41146 0.0804944 6.72802 0.397056C7.04458 0.713617 7.04458 1.22686 6.72802 1.54343L2.14254 6.12891L6.72802 10.7144C7.04458 11.0309 7.04458 11.5442 6.72802 11.8608C6.41146 12.1773 5.89821 12.1773 5.58165 11.8608L0.422983 6.70209ZM20.0454 6.93951H0.996168V5.3183H20.0454V6.93951Z" fill="#FFE03B" />
+                </svg>
+            </div>
+
+            <div class="w-[50px] h-[50px] border-2 border-primary flex justify-center items-center bg-black cursor-pointer" id="service-next">
+                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.848633 5.3183C0.400947 5.3183 0.0380268 5.68122 0.0380268 6.12891C0.0380268 6.57659 0.400947 6.93951 0.848633 6.93951V5.3183ZM20.4711 6.70209C20.7876 6.38553 20.7876 5.87228 20.4711 5.55572L15.3124 0.397056C14.9958 0.0804944 14.4826 0.0804944 14.166 0.397056C13.8495 0.713617 13.8495 1.22686 14.166 1.54343L18.7515 6.12891L14.166 10.7144C13.8495 11.0309 13.8495 11.5442 14.166 11.8608C14.4826 12.1773 14.9958 12.1773 15.3124 11.8608L20.4711 6.70209ZM0.848633 6.93951H19.8979V5.3183H0.848633V6.93951Z" fill="#FFE03B" />
+                </svg>
+            </div>
         </div>
 
-        <div class="flex flex-wrap pt-28">
-            <div class="w-1/3 group">
+        <p class="text-35 md:text-65 text-center font-bold text-white md:leading-relaxed mt-16 md:mt-44">We've got <span class="text-primary">all your services</span> covered!</p>
+
+        <div class="flex flex-row justify-center gap-x-4 mt-10">
+            <a href="#form" class="btn w-fit h-[48px] bg-primary px-4 md:px-7 text-lg font-bold uppercase">enquire today</a>
+            <a href="tel:<?= $phone_number ?>" class="btn w-fit h-[48px] bg-white px-4 md:px-7 text-lg font-bold uppercase">Call | <?= $phone_number ?></a>
+        </div>
+
+        <div class="pt-12 md:hidden" id="propertyTypeSlider">
+            <div class="w-full">
+                <div class="bg-white h-[590px] overflow-hidden flex flex-col">
+                    <div class="px-5 pt-16 pb-12 text-center grow">
+                        <p class="text-65 font-bold text-dark">Residential</p>
+                        <p class="leading-none text-grey pt-16 pb-12">Our residential pest control services offer peace of mind, ensuring your home is a sanctuary, free from unwanted guests.</p>
+
+                        <div class="w-9/12 mx-auto h-[90px] relative">
+                            <div class="w-full flex flex-wrap justify-center items-center gap-3">
+                                <div class="w-fit">
+                                    <p class="h-[38px] bg-primary rounded-full text-xl font-bold px-4 capitalize flex items-center">House</p>
+                                </div>
+                                <div class="w-fit">
+                                    <p class="h-[38px] bg-primary rounded-full text-xl font-bold px-4 capitalize flex items-center">Duplex</p>
+                                </div>
+                                <div class="w-fit">
+                                    <p class="h-[38px] bg-primary rounded-full text-xl font-bold px-4 capitalize flex items-center">Townhouse</p>
+                                </div>
+                                <div class="w-fit">
+                                    <p class="h-[38px] bg-primary rounded-full text-xl font-bold px-4 capitalize flex items-center">Apartment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?= renderImg('residential.png', 'lib') ?>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <div class="bg-white h-[590px] overflow-hidden flex flex-col">
+                    <div class="px-5 pt-16 pb-12 text-center grow">
+                        <p class="text-65 font-bold text-dark duration-150">Strata</p>
+                        <p class="leading-none text-grey pt-16 pb-12">Elevate your strata living with our comprehensive pest control solutions, creating a harmonious and pest-free community.</p>
+
+                        <div class="w-full h-[38px] relative">
+                            <div class="w-full flex flex-wrap justify-center items-center gap-3">
+                                <div class="w-fit">
+                                    <p class="h-[38px] bg-primary rounded-full text-xl font-bold px-4 capitalize flex items-center">Apartment compled</p>
+                                </div>
+                                <div class="w-fit">
+                                    <p class="h-[38px] bg-primary rounded-full text-xl font-bold px-4 capitalize flex items-center">Townhouse</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?= renderImg('strata.png', 'lib') ?>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <div class="bg-white h-[590px] overflow-hidden flex flex-col">
+                    <div class="px-5 pt-16 pb-12 text-center grow">
+                        <p class="text-65 font-bold text-dark duration-150">Commercial</p>
+                        <p class="leading-none text-grey pt-16 pb-12">Our commercial pest control services are your shield against safeguarding your business and ensuring a pest-free environment.</p>
+
+                        <div class="w-full h-[38px] relative">
+                            <div class="w-full flex flex-wrap justify-center items-center gap-3">
+                                <div class="w-fit">
+                                    <p class="h-[38px] bg-primary rounded-full text-xl font-bold px-4 capitalize flex items-center">Office</p>
+                                </div>
+                                <div class="w-fit">
+                                    <p class="h-[38px] bg-primary rounded-full text-xl font-bold px-4 capitalize flex items-center">Hospital</p>
+                                </div>
+                                <div class="w-fit">
+                                    <p class="h-[38px] bg-primary rounded-full text-xl font-bold px-4 capitalize flex items-center">School</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?= renderImg('commercial.png', 'lib') ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden md:flex flex-wrap pt-12 md:pt-28">
+            <div class="w-full md:w-1/3 group">
                 <div class="grayscale group-hover:grayscale-0 group-hover:bg-white duration-150 h-[590px] overflow-hidden flex flex-col">
                     <div class="px-5 pt-16 pb-12 text-center grow">
                         <p class="text-65 font-bold text-grey group-hover:text-dark duration-150">Residential</p>
@@ -345,7 +458,7 @@
                 </div>
             </div>
 
-            <div class="w-1/3 group">
+            <div class="w-full md:w-1/3 group">
                 <div class="grayscale group-hover:grayscale-0 group-hover:bg-white duration-150 h-[590px] overflow-hidden flex flex-col">
                     <div class="px-5 pt-16 pb-12 text-center grow">
                         <p class="text-65 font-bold text-grey group-hover:text-dark duration-150">Strata</p>
@@ -367,7 +480,7 @@
                 </div>
             </div>
 
-            <div class="w-1/3 group">
+            <div class="w-full md:w-1/3 group">
                 <div class="grayscale group-hover:grayscale-0 group-hover:bg-white duration-150 h-[590px] overflow-hidden flex flex-col">
                     <div class="px-5 pt-16 pb-12 text-center grow">
                         <p class="text-65 font-bold text-grey group-hover:text-dark duration-150">Commercial</p>
@@ -396,15 +509,15 @@
 </section>
 
 <section class="flex flex-wrap">
-    <div class="w-1/2 h-[690px] order-1">
+    <div class="w-full md:w-1/2 h-[375px] md:h-[690px] order-1">
         <?= renderImg('warranty.jpg', 'lib', 'object-cover h-full w-full') ?>
     </div>
 
-    <div class="w-1/2 bg-primary order-2">
-        <div class="px-32 h-full flex flex-col justify-center items-start  lg:w-10/12">
+    <div class="w-full md:w-1/2 bg-primary order-2">
+        <div class="py-14 md:py-5 px-4 md:px-32 h-full flex flex-col justify-center items-start lg:w-10/12">
             <div>
-                <p class="text-65 font-bold leading-none">We offer warranty!</p>
-                <p class="text-35 leading-none pt-12 pb-16">We stand behind the quality of our work, offering warranty of up to 6 months on select services.</p>
+                <p class="text-35 md:text-65 font-bold leading-none">We offer warranty!</p>
+                <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">We stand behind the quality of our work, offering warranty of up to 6 months on select services.</p>
                 <a href="#form" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
             </div>
         </div>
@@ -412,15 +525,15 @@
 </section>
 
 <section class="flex flex-wrap">
-    <div class="w-1/2 h-[690px] order-2">
+    <div class="w-full md:w-1/2 h-[375px] md:h-[690px] md:order-2">
         <?= renderImg('experience.jpg', 'lib', 'object-cover h-full w-full') ?>
     </div>
 
-    <div class="w-1/2 bg-primary order-1">
-        <div class="px-32 h-full flex flex-col justify-center items-start ms-auto lg:w-10/12">
+    <div class="w-full md:w-1/2 bg-primary md:order-1">
+        <div class="py-14 md:py-5 px-4 md:px-32 h-full flex flex-col justify-center items-start ms-auto lg:w-10/12">
             <div>
-                <p class="text-65 font-bold leading-none">With over 20 years of experience</p>
-                <p class="text-35 leading-none pt-12 pb-16">We stand behind the quality of our work, offering warranty of up to 6 months on select services.</p>
+                <p class="text-35 md:text-65 font-bold leading-none">With over 20 years of experience</p>
+                <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">We stand behind the quality of our work, offering warranty of up to 6 months on select services.</p>
                 <a href="#form" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
             </div>
         </div>
@@ -428,22 +541,22 @@
 </section>
 
 <section class="flex flex-wrap">
-    <div class="w-1/2 h-[690px] order-1">
+    <div class="w-full md:w-1/2 h-[375px] md:h-[690px] order-1">
         <?= renderImg('free-quote.jpg', 'lib', 'object-cover h-full w-full') ?>
     </div>
 
-    <div class="w-1/2 bg-primary order-2">
-        <div class="px-32 h-full flex flex-col justify-center items-start  lg:w-10/12">
+    <div class="w-full md:w-1/2 bg-primary order-2">
+        <div class="py-14 md:py-5 px-4 md:px-32 h-full flex flex-col justify-center items-start lg:w-10/12">
             <div>
-                <p class="text-65 font-bold leading-none">Know your options with a free quote.</p>
-                <p class="text-35 leading-none pt-12 pb-16">Contact us today for a free, no-obligation quote. We believe in transparency and helping you make an informed decision.</p>
+                <p class="text-35 md:text-65 font-bold leading-none">Know your options with a free quote.</p>
+                <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">Contact us today for a free, no-obligation quote. We believe in transparency and helping you make an informed decision.</p>
                 <a href="#form" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="form py-36" id="form">
+<section class="form py-14 md:py-36" id="form">
     <div class="container">
         <form class="bg-primary flex flex-wrap gap-y-24 form py-11 ps-28 pe-11">
             <div class="w-1/2">
@@ -496,14 +609,14 @@
     </div>
 </section>
 
-<section class="testimonials pb-36">
+<section class="testimonials pb-16 md:pb-36">
     <div class="container">
-        <div class="flex flex-wrap justify-between items-center">
-            <div class="w-1/2">
-                <p class="text-65 font-bold">Our <span class="text-primary">happy</span> clients</p>
-                <p class="text-grey text-2xl leading-none pt-10">Don't take our word for it; see what our clients have to say...</p>
+        <div class="flex flex-wrap justify-between items-center gap-y-8">
+            <div class="w-full md:w-1/2">
+                <p class="text-35 md:text-65 leading-none font-bold">Our <span class="text-primary">happy</span> clients</p>
+                <p class="text-grey text-xl md:text-2xl leading-none pt-6 md:pt-10">Don't take our word for it; see what our clients have to say...</p>
             </div>
-            <div class="w-3/12">
+            <div class="w-full md:w-3/12">
                 <div class="w-full bg-light flex justify-between items-center gap-x-4 p-5 rounded-2xl">
                     <div class="w-fit">
                         <?= renderImg('google.png', 'lib') ?>

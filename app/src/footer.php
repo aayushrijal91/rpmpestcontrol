@@ -1,12 +1,13 @@
 <footer class="bg-primary py-10">
 	<div class="container">
-		<div class="flex flex-wrap justify-between items-center">
-			<div class="w-fit">
+		<div class="flex flex-wrap justify-center md:justify-between items-center gap-y-8">
+			<div class="w-1/3 md:w-fit order-1">
 				<a href="./">
 					<?= renderImg('logo.png', 'logo') ?>
 				</a>
 			</div>
-			<div class="w-fit flex gap-x-2">
+
+			<div class="w-full md:w-fit flex justify-center gap-x-2 order-2">
 				<a href="#" target="_blank" class="w-[42px] h-[42px] bg-secondary flex justify-center items-center overflow-hidden">
 					<svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M3.62918 18.8592L3.60336 10.98H0.226562V7.60321H3.60336V5.35201C3.60336 2.31379 5.48482 0.849609 8.19512 0.849609C9.49337 0.849609 10.6092 0.946265 10.9343 0.989465V4.16458L9.05461 4.16544C7.5806 4.16544 7.29519 4.86587 7.29519 5.8937V7.60321H11.4826L10.357 10.98H7.29518V18.8592H3.62918Z" fill="#0F0D03" />
@@ -34,13 +35,17 @@
 					<?= renderImg('snapchat.png', 'logo') ?>
 				</a>
 			</div>
-			<div class="w-fit">
+
+			<div class="w-fit order-4 md:order-3">
 				<a href="https://www.aiims.com.au/this-is-us">
 					<?= renderImg('aiims.png', 'logo') ?>
 				</a>
 			</div>
+
+			<div class="w-full order-3 md:order-4">
+				<p class="font-medium text-sm md:text-lg text-center md:text-start">Copyright <?= date('Y') ?> <span class="px-3 md:px-5">/</span> <?= $site ?> <span class="px-3 md:px-5">/</span> All rights reserved</p>
+			</div>
 		</div>
-		<p class="font-medium text-lg pt-8">Copyright <?= date('Y') ?> <span class="px-5">/</span> <?= $site ?> <span class="px-5">/</span> All rights reserved</p>
 	</div>
 </footer>
 
