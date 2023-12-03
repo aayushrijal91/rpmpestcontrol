@@ -10,7 +10,7 @@
             <div class="w-fit hidden md:block">
                 <div class="flex flex-row justify-center gap-x-4">
                     <a href="tel:<?= $phone_number ?>" class="btn w-fit h-[48px] bg-secondary xl:bg-primary px-7 text-lg font-bold"><?= $phone_number ?></a>
-                    <a href="#" class="btn w-fit h-[48px] bg-white px-7 text-lg font-bold uppercase">enquire today</a>
+                    <a href="#forms" class="btn w-fit h-[48px] bg-white px-7 text-lg font-bold uppercase">enquire today</a>
                 </div>
             </div>
 
@@ -52,7 +52,7 @@
                             <p class="text-4xl font-bold leading-none">+ $80</p>
 
                             <div class="flex mt-10">
-                                <a href="#" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">Enquire Today</a>
+                                <a href="#forms" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">Enquire Today</a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                             <p class="text-4xl leading-7">We take care of our seniors!</p>
                             <p class="uppercase text-55 font-bold py-4">10% OFF</p>
                             <div class="flex mt-7">
-                                <a href="#" class="h-[50px] border-2 border-secondary inline-flex justify-center items-center uppercase text-lg font-bold px-7">Claim Now</a>
+                                <a href="#forms" class="h-[50px] border-2 border-secondary inline-flex justify-center items-center uppercase text-lg font-bold px-7">Claim Now</a>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                             <p class="text-4xl leading-7 font-medium">Refer a neighbour and get...</p>
                             <p class="uppercase text-55 font-bold py-5">20% OFF</p>
                             <div class="flex mt-7">
-                                <a href="#" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">Claim Now</a>
+                                <a href="#forms" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">Claim Now</a>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,9 @@
                 <div class="px-5 py-10 xl:p-0 xl:w-11/12">
                     <p class="text-2xl capitalize font-medium text-primary">Don't wait. Get your free quote now!</p>
 
-                    <form action="./src/form" method="POST" enctype="multipart/form-data" id="form" class="form flex flex-wrap gap-y-4 -mx-1 pt-8">
+                    <form action="./src/freeQuoteForm" method="POST" enctype="multipart/form-data" class="form flex flex-wrap gap-y-4 -mx-1 pt-8">
+                        <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
+
                         <div class="w-full md:w-1/2 px-1">
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
                         </div>
@@ -116,9 +118,9 @@
                                     <path d="M26.2542 8.33206V4.9861C26.2542 4.09869 25.9017 3.24764 25.2742 2.62015C24.6467 1.99266 23.7956 1.64014 22.9082 1.64014H19.5623" stroke="#FFE03B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M1.71716 8.33206V4.9861C1.71716 4.09869 2.06968 3.24764 2.69717 2.62015C3.32466 1.99266 4.17572 1.64014 5.06312 1.64014H8.40909" stroke="#FFE03B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                <p id="">Upload Images (optional)</p>
+                                <p id="file-label">Upload Images (optional)</p>
                             </label>
-                            <input type="file" id="fileUpload" name="fileUpload" class="hidden" />
+                            <input type="file" id="fileUpload" name="uploadedFile" class="hidden" />
                         </div>
                         <div class="w-full px-1">
                             <button class="h-[59px] bg-secondary w-full text-black uppercase text-2xl font-bold rounded-1" type="submit">Get Free Quote</button>
@@ -144,7 +146,7 @@
         </div>
     </div>
 
-    <div class="flex items-center justify-center xl:flex-col lg:flex-row flex-wrap mt-24 lg:gap-y-10">
+    <div class="flex items-center justify-center md:flex-col lg:flex-row flex-wrap mt-24 lg:gap-y-10">
         <div class="w-full md:w-1/2 xl:w-1/3 border-y-2 lg:border-y-0 lg:border-x-2 border-grey">
             <div class="flex flex-wrap justify-between items-center gap-x-4 py-6 lg:py-0 md:px-7">
                 <div class="w-fit">
@@ -213,7 +215,7 @@
         </div>
 
         <div class="w-full md:w-1/3 lg:w-3/12">
-            <a href="#" class="btn h-[50px] bg-secondary px-16 text-lg font-bold uppercase w-full md:w-fit">Claim Now</a>
+            <a href="#forms" class="btn h-[50px] bg-secondary px-16 text-lg font-bold uppercase w-full md:w-fit">Claim Now</a>
         </div>
     </div>
 </div>
@@ -233,7 +235,7 @@
                         Put an end to your pest problems with our comprehensive general pest control services. From spiders and cockroaches to bed bugs and fleas, we have the expertise to keep your property pest-free.
                     </p>
 
-                    <a href="#" class="btn h-[50px] bg-dark text-secondary px-7 text-lg font-bold uppercase">Make an enquiry</a>
+                    <a href="#forms" class="btn h-[50px] bg-dark text-secondary px-7 text-lg font-bold uppercase">Make an enquiry</a>
                 </div>
             </div>
 
@@ -252,7 +254,7 @@
                     <p class="text-4xl font-bold leading-none text-secondary">+ $80</p>
 
                     <div class="flex mt-10">
-                        <a href="#" class="h-[50px] border-2 border-secondary text-secondary inline-flex justify-center items-center uppercase text-lg font-bold px-16">Claim Now</a>
+                        <a href="#forms" class="h-[50px] border-2 border-secondary text-secondary inline-flex justify-center items-center uppercase text-lg font-bold px-16">Claim Now</a>
                     </div>
                 </div>
             </div>
@@ -324,7 +326,7 @@
                                 <?= $service['description'] ?>
                             </div>
 
-                            <a href="#form" class="btn h-[50px] bg-dark text-secondary px-7 text-lg font-bold uppercase">Make an enquiry</a>
+                            <a href="#forms" class="btn h-[50px] bg-dark text-secondary px-7 text-lg font-bold uppercase">Make an enquiry</a>
                         </div>
                     </div>
                 </div>
@@ -518,7 +520,7 @@
             <div>
                 <p class="text-35 md:text-65 font-bold leading-none">We offer warranty!</p>
                 <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">We stand behind the quality of our work, offering warranty of up to 6 months on select services.</p>
-                <a href="#form" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
+                <a href="#forms" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
             </div>
         </div>
     </div>
@@ -534,7 +536,7 @@
             <div>
                 <p class="text-35 md:text-65 font-bold leading-none">With over 20 years of experience</p>
                 <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">We stand behind the quality of our work, offering warranty of up to 6 months on select services.</p>
-                <a href="#form" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
+                <a href="#forms" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
             </div>
         </div>
     </div>
@@ -550,13 +552,13 @@
             <div>
                 <p class="text-35 md:text-65 font-bold leading-none">Know your options with a free quote.</p>
                 <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">Contact us today for a free, no-obligation quote. We believe in transparency and helping you make an informed decision.</p>
-                <a href="#form" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
+                <a href="#forms" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-14 md:py-36" id="form">
+<section class="py-14 md:py-36" id="forms">
     <div class="container">
         <div class="bg-secondary flex justify-end">
             <div class="w-full lg:w-1/2 flex">
@@ -575,10 +577,12 @@
 
         <div id="enquiryForm" class="formwrapper">
             <form action="./src/form" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
+                <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
+
                 <div class="w-full lg:w-1/2 order-1">
                     <div class="xl:w-9/12">
                         <p class="text-35 md:text-65 font-bold leading-none">Get in touch with our experts!</p>
-                        
+
                         <div class="description text-xl md:text-2xl py-6 md:py-10">
                             <p>Simply fill out your information and we will get back to you ASAP.</p>
                             <p>Or speak to us today!</p>
@@ -628,7 +632,9 @@
         </div>
 
         <div id="freeQuoteForm" class="formwrapper hidden">
-            <form action="./src/form" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
+            <form action="./src/freeQuoteForm" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
+                <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
+
                 <div class="w-full lg:w-1/2 order-1">
                     <div class="xl:w-10/12">
                         <p class="text-35 md:text-65 font-bold leading-none">Ready to rid your property of pests?</p>
@@ -658,7 +664,7 @@
                             </select>
                         </div>
                         <div class="w-full md:w-2/3 px-2">
-                            <input type="text" class="form-control" name="streetAddress" placeholder="Street address" />
+                            <input type="text" class="form-control" name="streetaddress" placeholder="Street address" />
                         </div>
                         <div class="w-full md:w-1/3 px-2">
                             <input type="number" class="form-control" name="postcode" placeholder="Post code" />
@@ -667,7 +673,7 @@
                             <textarea name="additionalInformation" class="w-full rounded-[20px] overflow-hidden py-5 px-4" placeholder="Type your enquiry here..." rows="4"></textarea>
                         </div>
                         <div class="w-full px-2">
-                            <label for="fileUpload" class="flex flex-col justify-center items-center text-black cursor pointer text-xl font-medium">
+                            <label for="fileUpload2" class="flex flex-col justify-center items-center text-black cursor pointer text-xl font-medium">
                                 <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M23.8508 15.5463L16.5804 7.2373L9.30997 15.5463H13.4645V23.8554H19.6962V15.5463H23.8508Z" stroke="#0F0D03" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M31.0063 23.1411V27.0755C31.0063 28.119 30.5918 29.1197 29.854 29.8575C29.1161 30.5954 28.1154 31.0099 27.0719 31.0099H23.1375" stroke="#0F0D03" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -675,9 +681,9 @@
                                     <path d="M31.0063 10.0265V6.0921C31.0063 5.04864 30.5918 4.04791 29.854 3.31007C29.1161 2.57223 28.1154 2.15771 27.0719 2.15771H23.1375" stroke="#0F0D03" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M2.15417 10.0265V6.0921C2.15417 5.04864 2.56869 4.04791 3.30653 3.31007C4.04437 2.57223 5.0451 2.15771 6.08856 2.15771H10.0229" stroke="#0F0D03" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                <p id="">Upload Images (optional)</p>
+                                <p id="file-label-2">Upload Images (optional)</p>
                             </label>
-                            <input type="file" id="fileUpload" name="fileUpload" class="hidden" />
+                            <input type="file" id="fileUpload2" name="uploadedFile" class="hidden" />
                         </div>
                     </div>
                 </div>
@@ -713,7 +719,7 @@
                 <p class="text-35 md:text-65 leading-none font-bold">Our <span class="text-primary">happy</span> clients</p>
                 <p class="text-grey text-xl md:text-2xl leading-none pt-6 md:pt-10">Don't take our word for it; see what our clients have to say...</p>
             </div>
-            
+
             <div class="w-full md:w-1/2 lg:w-5/12 xl:w-3/12">
                 <div class="w-full bg-light flex justify-between items-center gap-x-4 p-5 rounded-2xl">
                     <div class="w-fit">

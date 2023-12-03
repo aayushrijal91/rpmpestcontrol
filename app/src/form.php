@@ -18,10 +18,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
 
         $subject = "Message from " . $site;
 
-        $name = $_POST['name'];
-        $phone = $_POST['phone'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
+        $name = $_POST['fullname'];
+        $phone = $_POST['phonenumber'];
+        $email = $_POST['emailaddress'];
+        $message = $_POST['additionalInformation'];
 
         $message = '<!DOCTYPE html>
                 <html>

@@ -1,6 +1,6 @@
 // AOS.init({ duration: 1500 });
 
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#forms"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -130,4 +130,42 @@ $('.formToggleButton').on('click', function () {
     $(this).addClass('active');
     $('.formwrapper').hide();
     $(`#${$(this).data('target')}`).fadeIn();
-})
+});
+
+
+function validateForm() {
+    let phoneInput = $('#contactNumber').val();
+    let re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+    if(!re.test(phoneInput)) {
+        $('#phoneError').fadeIn();
+
+        return false;
+    } else {
+        $('#phoneError').fadeOut();
+    }
+
+    return true;
+}
+
+$("#form").on('submit', function () {
+    return validateForm();
+});
+
+$('#fileUpload').on('change', function() {
+    let file = $(this).val();
+    if (file != "") {
+        let theSplit = file.split('\\');
+        let fileName = theSplit[theSplit.length - 1];
+        $('#file-label').html(fileName.substring(0, 50));
+    }
+});
+
+$('#fileUpload2').on('change', function() {
+    let file = $(this).val();
+    if (file != "") {
+        let theSplit = file.split('\\');
+        let fileName = theSplit[theSplit.length - 1];
+        $('#file-label-2').html(fileName.substring(0, 50));
+    }
+});
