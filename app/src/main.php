@@ -83,7 +83,7 @@
                 <div class="px-5 py-10 md:p-0 md:w-11/12">
                     <p class="text-2xl capitalize font-medium text-primary">Don't wait. Get your free quote now!</p>
 
-                    <form action="" id="form" class="form flex flex-wrap gap-y-4 -mx-1 pt-8">
+                    <form action="./src/form" method="POST" enctype="multipart/form-data" id="form" class="form flex flex-wrap gap-y-4 -mx-1 pt-8">
                         <div class="w-1/2 px-1">
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
                         </div>
@@ -574,23 +574,26 @@
         </div>
 
         <div id="enquiryForm" class="formwrapper">
-            <form class="bg-primary flex flex-wrap gap-y-24 form p-11">
-                <div class="w-1/2">
-                    <div class="xl:w-9/12 ps-7">
-                        <p class="text-65 font-bold leading-none">Get in touch with our experts!</p>
-                        <div class="description text-2xl py-10">
+            <form action="./src/form" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
+                <div class="w-full md:w-1/2 order-1">
+                    <div class="xl:w-9/12">
+                        <p class="text-35 md:text-65 font-bold leading-none">Get in touch with our experts!</p>
+                        
+                        <div class="description text-xl md:text-2xl py-6 md:py-10">
                             <p>Simply fill out your information and we will get back to you ASAP.</p>
                             <p>Or speak to us today!</p>
                         </div>
+
                         <a href="tel:<?= $phone_number ?>" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">call | <?= $phone_number ?></a>
                     </div>
                 </div>
-                <div class="w-1/2">
-                    <div class="flex flex-wrap gap-y-4">
-                        <div class="w-1/2 px-2">
+
+                <div class="w-full md:w-1/2 order-2">
+                    <div class="flex flex-wrap gap-y-4 -mx-2">
+                        <div class="w-full md:w-1/2 px-2">
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
                         </div>
-                        <div class="w-1/2 px-2">
+                        <div class="w-full md:w-1/2 px-2">
                             <input type="tel" class="form-control" name="phonenumber" placeholder="Contact no.*" required />
                         </div>
                         <div class="w-full px-2">
@@ -599,11 +602,10 @@
                         <div class="w-full px-2">
                             <textarea name="additionalInformation" class="w-full rounded-[20px] overflow-hidden py-5 px-4" placeholder="Type your enquiry here..." rows="7"></textarea>
                         </div>
-                        <div class="w-full px-1">
-                        </div>
                     </div>
                 </div>
-                <div class="w-1/2 flex gap-x-5">
+
+                <div class="w-full md:w-1/2 flex gap-x-5 order-4 md:order-3">
                     <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.00012207" y="0.59668" width="41.9711" height="41.9711" rx="10" fill="#0F0D03" />
                         <path d="M11.8549 33.418C12.6954 33.418 13.3767 32.7556 13.3767 31.9384C13.3767 31.1213 12.6954 30.4589 11.8549 30.4589C11.0145 30.4589 10.3331 31.1213 10.3331 31.9384C10.3331 32.7556 11.0145 33.418 11.8549 33.418Z" fill="#FFE03B" />
@@ -618,44 +620,47 @@
                         <p class="text-lg leading-none">All information provided will be kept 100% private &amp; secure.</p>
                     </div>
                 </div>
-                <div class="w-1/2">
-                    <button class="h-[59px] bg-black w-full text-primary uppercase text-2xl font-bold rounded-1" type="submit">Get Free Quote</button>
+
+                <div class="w-full md:w-1/2 order-3 md:order-4">
+                    <button class="h-[59px] bg-black w-full text-primary uppercase text-xl md:text-2xl font-bold rounded-1" type="submit">Submit Now</button>
                 </div>
             </form>
         </div>
 
         <div id="freeQuoteForm" class="formwrapper hidden">
-            <form class="bg-primary flex flex-wrap gap-y-10 form p-11">
-                <div class="w-1/2">
-                    <div class="xl:w-9/12 ps-7">
-                        <p class="text-65 font-bold leading-none">Get in touch with our experts!</p>
-                        <div class="description text-2xl py-10">
-                            <p>Simply fill out your information and we will get back to you ASAP.</p>
-                            <p>Or speak to us today!</p>
+            <form action="./src/form" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
+                <div class="w-full md:w-1/2 order-1">
+                    <div class="xl:w-10/12">
+                        <p class="text-35 md:text-65 font-bold leading-none">Ready to rid your property of pests?</p>
+
+                        <div class="description text-xl md:text-2xl py-10">
+                            <p>Contact RPM Pest Control Hills District today for a free quote. Our experienced team is dedicated to keeping your home or business pest-free and safe. Your satisfaction is our guarantee.</p>
                         </div>
+
                         <a href="tel:<?= $phone_number ?>" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">call | <?= $phone_number ?></a>
                     </div>
                 </div>
-                <div class="w-1/2">
-                    <div class="flex flex-wrap gap-y-4">
-                        <div class="w-1/2 px-2">
+
+                <div class="w-full md:w-1/2 order-2">
+                    <div class="flex flex-wrap gap-y-4 -mx-2">
+                        <div class="w-full md:w-1/2 px-2">
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
                         </div>
-                        <div class="w-1/2 px-2">
+                        <div class="w-full md:w-1/2 px-2">
                             <input type="tel" class="form-control" name="phonenumber" placeholder="Contact no.*" required />
                         </div>
-                        <div class="w-1/2 px-2">
+                        <div class="w-full md:w-1/2 px-2">
                             <input type="email" class="form-control" name="emailaddress" placeholder="Email address*" required />
                         </div>
-                        <div class="w-1/2 px-2">
+                        <div class="w-full md:w-1/2 px-2">
                             <select class="form-control" name="service" required>
                                 <option selected disabled>Select service/s*</option>
                             </select>
                         </div>
-                        <div class="w-2/3 px-2">
+                        <div class="w-full md:w-2/3 px-2">
                             <input type="text" class="form-control" name="streetAddress" placeholder="Street address" />
                         </div>
-                        <div class="w-1/3 px-2">
+                        <div class="w-full md:w-1/3 px-2">
                             <input type="number" class="form-control" name="postcode" placeholder="Post code" />
                         </div>
                         <div class="w-full px-2">
@@ -676,7 +681,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/2 flex gap-x-5">
+
+                <div class="w-full md:w-1/2 flex gap-x-5 order-4 md:order-3">
                     <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.00012207" y="0.59668" width="41.9711" height="41.9711" rx="10" fill="#0F0D03" />
                         <path d="M11.8549 33.418C12.6954 33.418 13.3767 32.7556 13.3767 31.9384C13.3767 31.1213 12.6954 30.4589 11.8549 30.4589C11.0145 30.4589 10.3331 31.1213 10.3331 31.9384C10.3331 32.7556 11.0145 33.418 11.8549 33.418Z" fill="#FFE03B" />
@@ -691,8 +697,9 @@
                         <p class="text-lg leading-none">All information provided will be kept 100% private &amp; secure.</p>
                     </div>
                 </div>
-                <div class="w-1/2">
-                    <button class="h-[59px] bg-black w-full text-primary uppercase text-2xl font-bold rounded-1" type="submit">Get Free Quote</button>
+
+                <div class="w-full md:w-1/2 order-3 md:order-4">
+                    <button class="h-[59px] bg-black w-full text-primary uppercase text-xl md:text-2xl font-bold rounded-1" type="submit">Get Free Quote</button>
                 </div>
             </form>
         </div>

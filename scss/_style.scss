@@ -91,7 +91,7 @@ section#form {
     }
 
     .formToggleButton {
-        @apply px-10 py-4 text-2xl font-bold relative;
+        @apply px-5 md:px-10 py-4 text-lg md:text-2xl font-bold relative;
 
         &.active {
             background: #FFE03C;
