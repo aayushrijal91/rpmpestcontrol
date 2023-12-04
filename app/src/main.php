@@ -1,5 +1,7 @@
-<header>
-    <div class="container">
+<header class="relative overflow-hidden">
+    <?= renderImg('wasps.gif', 'lib', 'hidden lg:block absolute top-0 left-0 mix-blend-darken') ?>
+
+    <div class="container relative">
         <div class="flex flex-wrap justify-between items-center py-5">
             <div class="w-3/12 md:w-fit">
                 <a href="./">
@@ -24,7 +26,7 @@
         </div>
     </div>
 
-    <div class="container header-container">
+    <div class="container header-container relative">
         <div class="flex flex-wrap mt-12">
             <div class="w-full xl:w-8/12 pb-6 xl:pb-0">
                 <div class="px-4 xl:px-0">
@@ -36,7 +38,9 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap mt-36" id="ctaSlider">
+                <?= renderImg('wasps.gif', 'lib', 'lg:hidden mix-blend-darken') ?>
+
+                <div class="flex flex-wrap lg:mt-36" id="ctaSlider">
                     <div class="w-full lg:w-1/3">
                         <div class="bg-secondary text-black p-4 h-full">
                             <div class="flex flex-wrap">

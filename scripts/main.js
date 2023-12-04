@@ -103,6 +103,7 @@ if ($(window).width() < 900) {
                     infinite: false,
                     centerPadding: "20px",
                     arrows: false,
+                    initialSlide: 0,
                 }
             }
         ]
@@ -137,7 +138,7 @@ function validateForm() {
     let phoneInput = $('#contactNumber').val();
     let re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
-    if(!re.test(phoneInput)) {
+    if (!re.test(phoneInput)) {
         $('#phoneError').fadeIn();
 
         return false;
@@ -152,7 +153,7 @@ $("#form").on('submit', function () {
     return validateForm();
 });
 
-$('#fileUpload').on('change', function() {
+$('#fileUpload').on('change', function () {
     let file = $(this).val();
     if (file != "") {
         let theSplit = file.split('\\');
@@ -161,7 +162,7 @@ $('#fileUpload').on('change', function() {
     }
 });
 
-$('#fileUpload2').on('change', function() {
+$('#fileUpload2').on('change', function () {
     let file = $(this).val();
     if (file != "") {
         let theSplit = file.split('\\');
