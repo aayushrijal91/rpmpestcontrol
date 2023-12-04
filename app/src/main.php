@@ -30,7 +30,7 @@
         <div class="flex flex-wrap mt-12">
             <div class="w-full xl:w-8/12 pb-6 xl:pb-0">
                 <div class="px-4 xl:px-0">
-                    <p class="text-lg md:text-2xl uppercase font-medium leading-none">Welcome to rpm pest<br class="md:hidden" /> control hills district</p>
+                    <p class="text-lg md:text-2xl uppercase font-medium leading-none">Welcome to rpm pest<br class="md:hidden" /> control <?= $location ?></p>
                     <h1 class="text-35 md:text-65 leading-none font-bold pt-4 md:pt-0 xl:w-11/12">Your go-to experts in effective & reliable pest control solutions</h1>
 
                     <div class="flex mt-10">
@@ -165,8 +165,8 @@
         </div>
 
         <div class="w-full lg:w-1/2">
-            <p class="text-xl md:text-2xl font-bold leading-none">Welcome to RPM Pest Control Hills District</p>
-            <p class="font-medium text-grey text-lg md:text-xl pt-5">At RPM Pest Control, we are your dedicated partners in pest management, proudly serving the Hills District and the surrounding areas. With over 25 years of experience, we have established ourselves as the go-to experts in providing effective and reliable pest control solutions. Whether you're dealing with general pests, termites, rodents, or any other unwelcome guests, you can trust us to safeguard your home or business.</p>
+            <p class="text-xl md:text-2xl font-bold leading-none">Welcome to RPM Pest Control <?= $location ?></p>
+            <p class="font-medium text-grey text-lg md:text-xl pt-5">At RPM Pest Control, we are your dedicated partners in pest management, proudly serving the <?= $location ?> and the surrounding areas. With over 25 years of experience, we have established ourselves as the go-to experts in providing effective and reliable pest control solutions. Whether you're dealing with general pests, termites, rodents, or any other unwelcome guests, you can trust us to safeguard your home or business.</p>
         </div>
     </div>
 
@@ -216,7 +216,7 @@
         <div class="w-full md:w-1/2 xl:w-1/3 border-b-2 lg:border-b-0 lg:border-l-2 xl:border-l-0 lg:border-r-2 border-grey">
             <div class="flex flex-wrap justify-center items-center py-6 lg:py-0 md:px-7">
                 <div class="w-4/12">
-                    <p class="text-base leading-4">Servicing<br /> The Hills District & surrounding areas</p>
+                    <p class="text-base leading-4">Servicing<br /> The <?= $location ?> & surrounding areas</p>
                 </div>
                 <div class="w-1/2">
                     <?= renderImg('the-hills.png', 'lib') ?>
@@ -226,7 +226,7 @@
     </div>
 
     <p class="text-35 md:text-65 font-bold leading-none mt-14 md:mt-24"><span class="text-primary">Transparent & fair</span> pricing</p>
-    <p class="text-grey text-xl md:text-2xl leading-none pt-6 md:pt-10">We believe in transparent pricing. You won't find any hidden fees when you choose RPM Pest Control Hills District.</p>
+    <p class="text-grey text-xl md:text-2xl leading-none pt-6 md:pt-10">We believe in transparent pricing. You won't find any hidden fees when you choose RPM Pest Control <?= $location ?>.</p>
 
     <div class="md:h-[234px] w-full mt-12 call-out-fee p-6 flex flex-wrap justify-between items-center gap-y-60">
         <div class="w-full md:w-1/3 lg:w-3/12 xl:w-2/12 bg-dark flex flex-col justify-center items-center rounded-[10px] p-5">
@@ -664,7 +664,7 @@
                         <p class="text-35 md:text-65 font-bold leading-none">Ready to rid your property of pests?</p>
 
                         <div class="description text-xl md:text-2xl py-10">
-                            <p>Contact RPM Pest Control Hills District today for a free quote. Our experienced team is dedicated to keeping your home or business pest-free and safe. Your satisfaction is our guarantee.</p>
+                            <p>Contact RPM Pest Control <?= $location ?> today for a free quote. Our experienced team is dedicated to keeping your home or business pest-free and safe. Your satisfaction is our guarantee.</p>
                         </div>
 
                         <a href="tel:<?= $phone_number ?>" class="h-[50px] border-2 border-black inline-flex justify-center items-center uppercase text-lg font-bold px-7">call | <?= $phone_number ?></a>
