@@ -3,10 +3,10 @@ include __DIR__ . '/env.php';
 
 $site = "RPM Pest Control";
 $phone_number = "1300 289 208";
-$admin_email = 'arijal@aiims.com.au';
+$admin_email = 'admin@rpmpestcontrol.com.au';
 $bcc_email = "";
-$no_reply_email = 'info@website.com.au';
-$location = "Hills District";
+$no_reply_email = 'info@rpmpestcontrol.com.au';
+$location = "Cumberland Area";
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 

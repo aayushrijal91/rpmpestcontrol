@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         $to = $admin_email;
         $email = $to;
 
-        $subject = "Message from " . $site;
+        $subject = "Message from " . $site . " " . $location;
 
         $name = $_POST['fullname'];
         $phone = $_POST['phonenumber'];

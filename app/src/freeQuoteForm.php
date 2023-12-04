@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         }
 
         $to = $admin_email;
-        $subject = "Message from " . $site;
+        $subject = "Message from " . $site . " " . $location;
 
         $name = strip_tags($_POST['fullname']);
         $email = strip_tags($_POST['emailaddress']);
