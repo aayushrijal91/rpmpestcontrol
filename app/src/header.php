@@ -10,17 +10,20 @@
 	<link rel="stylesheet" href="./assets/css/main.css?v=0.1">
 
 	<!-- Recaptcha Here -->
-	<!-- <script src="https://www.google.com/recaptcha/api.js?render=<?= $recaptcha_client_secret ?>"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=<?= $recaptcha_client_secret ?>"></script>
 	<script>
 		grecaptcha.ready(function() {
 			grecaptcha.execute('<?= $recaptcha_client_secret ?>', {
 				action: 'contact'
 			}).then(function(token) {
-				document.getElementById('recaptchaResponse').value = token;
+				document.getElementById('recaptchaResponse1').value = token;
+				document.getElementById('recaptchaResponse2').value = token;
+				document.getElementById('recaptchaResponse3').value = token;
 			});
 		});
-	</script> -->
+	</script>
+
+	<script async src="https://trkcall.com/scripts/93782.js"></script>
 </head>
 
 <body>
-	

@@ -84,7 +84,7 @@
                     <p class="text-2xl capitalize font-medium text-primary">Don't wait. Get your free quote now!</p>
 
                     <form action="./src/freeQuoteForm" method="POST" enctype="multipart/form-data" class="form flex flex-wrap gap-y-4 -mx-1 pt-8">
-                        <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
+                        <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse1" />
 
                         <div class="w-full md:w-1/2 px-1">
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
@@ -210,8 +210,8 @@
         </div>
 
         <div class="w-full md:w-1/2 xl:w-1/3 border-b-2 lg:border-b-0 lg:border-l-2 xl:border-l-0 lg:border-r-2 border-grey">
-            <div class="flex flex-wrap justify-between items-center py-6 lg:py-0 md:px-7">
-                <div class="w-5/12">
+            <div class="flex flex-wrap justify-center items-center py-6 lg:py-0 md:px-7">
+                <div class="w-4/12">
                     <p class="text-base leading-4">Servicing<br /> The Hills District & surrounding areas</p>
                 </div>
                 <div class="w-1/2">
@@ -597,7 +597,7 @@
 
         <div id="enquiryForm" class="formwrapper">
             <form action="./src/form" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
-                <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
+                <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse2" />
 
                 <div class="w-full lg:w-1/2 order-1">
                     <div class="xl:w-9/12">
@@ -653,7 +653,7 @@
 
         <div id="freeQuoteForm" class="formwrapper hidden">
             <form action="./src/freeQuoteForm" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
-                <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
+                <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse3" />
 
                 <div class="w-full lg:w-1/2 order-1">
                     <div class="xl:w-10/12">
@@ -786,42 +786,35 @@
 
     <?php $testimonials = [
         [
-            "name" => "Jane Doe",
-            "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+            "name" => "Lux Admin",
+            "comment" => "Hank and his team were amazing, I couldn't be happier with the service I received! From start to finish, the professionalism and attention to detail were outstanding. The team went above and beyond, their expertise was evident in the exceptional quality service provided. Highly recommend to anyone seeking top-notch service!"
         ],
         [
-            "name" => "Jane Doe",
-            "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+            "name" => "Lyna Hoang",
+            "comment" => "Professional, efficient, knowledgeable and great communication. They use the best quality products that keep pests away for months. Very friendly staff, great price for excellent quality of service. 100% highly recommend RPM Pest Control to anyone who needs to get rid of pests. They helped get rid of roaches, spiders and bird lice. Very Happy Customer 😊"
         ],
         [
-            "name" => "Jane Doe",
-            "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+            "name" => "Anthony",
+            "comment" => "Been using RPM Pest Control for years now. Calls are always friendly, Hank and the  technicians are very professional, always following up on their work after. Never had an issue with their services. Highly recommended and will be using them again when needed. Thanks RPM for your services."
         ],
         [
-            "name" => "Jane Doe",
-            "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+            "name" => "Frances Grande",
+            "comment" => "10/10!! The team at RPM are friendly, prompt, professional, thorough & knowledgeable. I very highly recommend their services & will definitely use them on a regular basis. So pleased with the results. Awesome job guys 😊"
         ],
         [
-            "name" => "Jane Doe",
-            "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+            "name" => "Kimee Trinh",
+            "comment" => "I've used RPM for years and Hank is the best in the business. He is so friendly, knowledgeable and communication is super easy. Always does the job right, everytime I have a problem. Highly recommend"
         ],
         [
-            "name" => "Jane Doe",
-            "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+            "name" => "Jordan Cavaliere",
+            "comment" => "RPM Pest control serviced my apartment at Rosebery.
+        They were prompt, professional and did an amazing job.
+        I have used other pest control services in the past and they could not match the service that I received from RPM."
         ],
         [
-            "name" => "Jane Doe",
-            "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
-        ],
-        [
-            "name" => "Jane Doe",
-            "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
-        ],
-        [
-            "name" => "Jane Doe",
-            "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
-        ],
-
+            "name" => "Behrouz Taji",
+            "comment" => "We used RPM's services last year to get rid of some cockroaches in our apartment. It worked! It's been a year and no trace of cockroaches. We were impressed so we have asked to come back this year for a repeat. Very professional and friendly staff."
+        ]
     ];
     ?>
 
