@@ -1,3 +1,56 @@
+<?php
+$services = [
+    [
+        "title" => "End of lease",
+        "description" => "<p>Planning to move? Don't let pests become an issue during your end of lease inspection. Our end of lease pest control service ensures you leave your property pest-free, meeting all requirements.</p>"
+    ],
+    [
+        "title" => "Termite Warranty Inspections",
+        "description" => "<p>Protect your property from silent invaders. Our termite warranty inspections offer peace of mind, ensuring your home remains termite-free.</p>"
+    ],
+    [
+        "title" => "Bird Management",
+        "description" => "<p>Bird problems?</p><p>We specialise in humane bird management solutions to keep your property clean and safe.</p>"
+    ],
+    [
+        "title" => "Termite Management",
+        "description" => "<p>Pre and Post-Construction</p><p>Prevent termite damage or treat existing infestations with our comprehensive termite management services. We're your shield against structural damage.</p>"
+    ],
+    [
+        "title" => "Safe Possum Removal",
+        "description" => "<p>Got noises in your roof? We'll safely and humanely relocate these creatures, so your property remains free of possums.</p>"
+    ],
+    [
+        "title" => "Rodent Treatments",
+        "description" => "<p>Mice or rats?</p><p>Our rodent treatments are designed to eliminate these pests, keeping your home or business free from health hazards.</p>"
+    ],
+    [
+        "title" => "Ant, Bee, & Wasp Treatments",
+        "description" => "<p>Our dedicated technicians are equipped to handle these common nuisances, ensuring that your family can enjoy the great outdoors and indoor serenity without the worry of stings or bites.</p>"
+    ],
+    [
+        "title" => "Bird Baiting",
+        "description" => "<p>Looking for a targeted bird control solution? Our bird baiting services are designed to deter birds from nesting on your property.</p>"
+    ],
+    [
+        "title" => "Bed Bugs, Fleas, & Drain Flies",
+        "description" => "<p>Don't let these pesky bugs disrupt your life. Our treatments will ensure you can rest easy without any unwelcome guests.</p>"
+    ],
+    [
+        "title" => "Spiders & Carpet Beetles",
+        "description" => "<p>We understand that a pest-free home is not just about comfort; it’s about keeping your family safe and healthy.</p>"
+    ],
+    [
+        "title" => "Large & German Cockroaches",
+        "description" => "<p>We eliminate crawling intruders, so you can enjoy a pest-free environment.</p>"
+    ],
+    [
+        "title" => "Solar Panel Birdproofing",
+        "description" => "<p>Protect your solar panels from bird damage. Our birdproofing solutions are designed to keep your investment safe.</p>"
+    ],
+];
+?>
+
 <header class="relative overflow-hidden">
     <?= renderImg('wasps.gif', 'lib', 'hidden lg:block absolute top-0 left-0 mix-blend-darken') ?>
 
@@ -87,14 +140,15 @@
                 <div class="px-5 py-10 xl:p-0 xl:w-11/12">
                     <p class="text-2xl capitalize font-medium text-primary">Don't wait. Get your free quote now!</p>
 
-                    <form action="./src/freeQuoteForm" method="POST" enctype="multipart/form-data" class="form flex flex-wrap gap-y-4 -mx-1 pt-8">
-                        <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse1" />
+                    <form action="./src/freeQuoteForm" method="POST" enctype="multipart/form-data" id="form1" class="form flex flex-wrap gap-y-4 -mx-1 pt-8">
+                        <input type="hidden" name="token" id="recaptchaResponse1" class="recaptchaResponse" />
 
                         <div class="w-full md:w-1/2 px-1">
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
                         </div>
                         <div class="w-full md:w-1/2 px-1">
-                            <input type="tel" class="form-control" name="phonenumber" placeholder="Contact no.*" required />
+                            <input type="tel" class="form-control" id="contactNumber1" name="phonenumber" placeholder="Contact no.*" required />
+                            <p class="text-sm font-bold text-red-500 ps-5 hidden" id="phoneError1">Invalid Phone Number</p>
                         </div>
                         <div class="w-full px-1">
                             <input type="email" class="form-control" name="emailaddress" placeholder="Email address*" required />
@@ -284,63 +338,12 @@
             </div>
         </div>
 
-        <?php $services = [
-            [
-                "title" => "End of lease",
-                "description" => "<p>Planning to move? Don't let pests become an issue during your end of lease inspection. Our end of lease pest control service ensures you leave your property pest-free, meeting all requirements.</p>"
-            ],
-            [
-                "title" => "Termite Warranty Inspections",
-                "description" => "<p>Protect your property from silent invaders. Our termite warranty inspections offer peace of mind, ensuring your home remains termite-free.</p>"
-            ],
-            [
-                "title" => "Bird Management",
-                "description" => "<p>Bird problems?</p><p>We specialise in humane bird management solutions to keep your property clean and safe.</p>"
-            ],
-            [
-                "title" => "Termite Management",
-                "description" => "<p>Pre and Post-Construction</p><p>Prevent termite damage or treat existing infestations with our comprehensive termite management services. We're your shield against structural damage.</p>"
-            ],
-            [
-                "title" => "Safe Possum Removal",
-                "description" => "<p>Got noises in your roof? We'll safely and humanely relocate these creatures, so your property remains free of possums.</p>"
-            ],
-            [
-                "title" => "Rodent Treatments",
-                "description" => "<p>Mice or rats?</p><p>Our rodent treatments are designed to eliminate these pests, keeping your home or business free from health hazards.</p>"
-            ],
-            [
-                "title" => "Ant, Bee, & Wasp Treatments",
-                "description" => "<p>Our dedicated technicians are equipped to handle these common nuisances, ensuring that your family can enjoy the great outdoors and indoor serenity without the worry of stings or bites.</p>"
-            ],
-            [
-                "title" => "Bird Baiting",
-                "description" => "<p>Looking for a targeted bird control solution? Our bird baiting services are designed to deter birds from nesting on your property.</p>"
-            ],
-            [
-                "title" => "Bed Bugs, Fleas, & Drain Flies",
-                "description" => "<p>Don't let these pesky bugs disrupt your life. Our treatments will ensure you can rest easy without any unwelcome guests.</p>"
-            ],
-            [
-                "title" => "Spiders & Carpet Beetles",
-                "description" => "<p>We understand that a pest-free home is not just about comfort; it’s about keeping your family safe and healthy.</p>"
-            ],
-            [
-                "title" => "Large & German Cockroaches",
-                "description" => "<p>We eliminate crawling intruders, so you can enjoy a pest-free environment.</p>"
-            ],
-            [
-                "title" => "Solar Panel Birdproofing",
-                "description" => "<p>Protect your solar panels from bird damage. Our birdproofing solutions are designed to keep your investment safe.</p>"
-            ],
-        ]; ?>
-
         <div class="flex flex-wrap -mx-1.5 gap-y-5" id="servicesSlider">
             <?php foreach ($services as $key => $service) : ?>
                 <div class="w-full lg:w-1/2 xl:w-1/3 px-1.5">
                     <div class="h-full flex flex-col">
                         <div class="bg-secondary pt-4 px-4 pb-6">
-                            <div class="h-[312px] w-full rounded-lg overflow-hidden"><?= renderImg('service-' . $key + 1 . '.jpg', 'lib', 'h-full w-full object-cover') ?></div>
+                            <div class="h-[312px] w-full rounded-lg overflow-hidden"><?= renderImg('service-' . ($key + 1) . '.jpg', 'lib', 'h-full w-full object-cover') ?></div>
 
                             <p class="text-lg md:text-xl font-medium pt-4">Our services</p>
                             <p class="text-2xl md:text-3xl font-bold leading-none"><?= $service['title'] ?></p>
@@ -600,8 +603,8 @@
         </div>
 
         <div id="enquiryForm" class="formwrapper">
-            <form action="./src/form" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
-                <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse2" />
+            <form action="./src/form" method="POST" enctype="multipart/form-data" id="form2" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
+                <input type="hidden" name="token" id="recaptchaResponse2" class="recaptchaResponse" />
 
                 <div class="w-full lg:w-1/2 order-1">
                     <div class="xl:w-9/12">
@@ -622,7 +625,8 @@
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
                         </div>
                         <div class="w-full md:w-1/2 px-2">
-                            <input type="tel" class="form-control" name="phonenumber" placeholder="Contact no.*" required />
+                            <input type="tel" class="form-control" name="phonenumber" id="contactNumber2" placeholder="Contact no.*" required />
+                            <p class="text-sm font-bold text-red-500 ps-5 hidden" id="phoneError2">Invalid Phone Number</p>
                         </div>
                         <div class="w-full px-2">
                             <input type="email" class="form-control" name="emailaddress" placeholder="Email address*" required />
@@ -656,8 +660,8 @@
         </div>
 
         <div id="freeQuoteForm" class="formwrapper hidden">
-            <form action="./src/freeQuoteForm" method="POST" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
-                <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse3" />
+            <form action="./src/freeQuoteForm" method="POST" id="form3" enctype="multipart/form-data" class="bg-primary flex flex-wrap gap-y-16 form px-3 py-11 md:p-11">
+                <input type="hidden" name="token" id="recaptchaResponse3" class="recaptchaResponse" />
 
                 <div class="w-full lg:w-1/2 order-1">
                     <div class="xl:w-10/12">
@@ -677,7 +681,8 @@
                             <input type="text" class="form-control" name="fullname" placeholder="Your name*" required />
                         </div>
                         <div class="w-full md:w-1/2 px-2">
-                            <input type="tel" class="form-control" name="phonenumber" placeholder="Contact no.*" required />
+                            <input type="tel" class="form-control" id="contactNumber3" name="phonenumber" placeholder="Contact no.*" required />
+                            <p class="text-sm font-bold text-red-500 ps-5 hidden" id="phoneError3">Invalid Phone Number</p>
                         </div>
                         <div class="w-full md:w-1/2 px-2">
                             <input type="email" class="form-control" name="emailaddress" placeholder="Email address*" required />

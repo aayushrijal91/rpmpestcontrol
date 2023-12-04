@@ -134,23 +134,31 @@ $('.formToggleButton').on('click', function () {
 });
 
 
-function validateForm() {
-    let phoneInput = $('#contactNumber').val();
+function validateForm(numberId, errorId) {
+    let phoneInput = $(numberId).val();
     let re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
     if (!re.test(phoneInput)) {
-        $('#phoneError').fadeIn();
+        $(errorId).fadeIn();
 
         return false;
     } else {
-        $('#phoneError').fadeOut();
+        $(errorId).fadeOut();
     }
 
     return true;
 }
 
-$("#form").on('submit', function () {
-    return validateForm();
+$("#form1").on('submit', function () {
+    return validateForm('#contactNumber1', '#phoneError1');
+});
+
+$("#form2").on('submit', function () {
+    return validateForm('#contactNumber2', '#phoneError2');
+});
+
+$("#form3").on('submit', function () {
+    return validateForm('#contactNumber3', '#phoneError3');
 });
 
 $('#fileUpload').on('change', function () {
