@@ -56,7 +56,7 @@ $services = [
 
     <div class="container relative">
         <div class="flex flex-wrap justify-between items-center py-5">
-            <div class="w-3/12 md:w-fit">
+            <div class="w-5/12 md:w-fit">
                 <a href="./">
                     <?= renderImg('logo.png', 'logo') ?>
                 </a>
@@ -562,7 +562,7 @@ $services = [
         <div class="py-14 lg:py-5 px-4 xl:px-32 h-full flex flex-col justify-center items-start ms-auto xl:w-10/12">
             <div>
                 <p class="text-35 md:text-65 font-bold leading-none">With over 20 years of experience</p>
-                <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">We stand behind the quality of our work, offering warranty of up to 6 months on select services.</p>
+                <p class="text-2xl md:text-35 leading-none py-8 md:pt-12 md:pb-16">With over 70 5 star reviews, our reputation will always exceed your expectations.</p>
                 <a href="#forms" class="btn h-[50px] bg-dark text-primary px-7 text-lg font-bold uppercase">Make an enquiry</a>
             </div>
         </div>
